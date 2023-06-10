@@ -1,55 +1,44 @@
-#Importing modules
-
-from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.providers.postgres.operators.postgres import PostgresOperator
-from airflow.utils.dates import 
+from airflow.operators.mysql_operator import MySqlOperator
 
-#Define default and DAG-specific arguments
+default_arg = {'owner': 'airflow', 'start_date': '2023-06-10'}
 
-default_args = {
-    "owner": "tegisty",
-    "email": ["tigisthay13@gmail.com"],
-    "email_on_failaure": True,
-    "retries": 1,
-    "retry_delay": timedelta(minutes=5),
-}
+dag = DAG('load-data',
+          default_args=default_arg,
+          schedule_interval='@once',
+          template_searchpath=['/usr/local/airflow/include/'])
 
-# Instantiate a DAG
-# Give the DAG name, configure the schedule, and set the DAG settings
-dag_exec = DAG(
-    dag_id="postgresoperator_demo",
-    default_args=default_args,
-    schedule_interval="@daily",
-    start_date=days_ago(1),
-    dagrun_timeout=timedelta(minutes=60),
-    description="use case of psql operator in airflow",
-)
+create_table = MySqlOperator(dag=dag,
+                           mysql_conn_id='mysql-connect', 
+                           task_id='create_table',
+                            sql='create_orders_table.sql')
 
-# Set the Tasks
 
-db = MySqlOperator(
-    sql="sql/create_database.sql",
-    task_id="createdb_task",
-    postgres_conssn_id="d2b",
-    dag=dag_exec,
-)
 
-create = PostgresOperator(
-    sql="sql/create_table.sql",
-    task_id="createtable_task",
-    postgres_conssn_id="d2b",
-    dag=dag_exec,
-)
+load_orders = MySqlOperator(dag=dag,
+                           mysql_conn_id='mysql-connect', 
+                           task_id='load_orders',
+                            sql='load_orders.sql')
 
-insert = PostgresOperator(
-    sql="sql/load_data.sql",
-    task_id="insertdata_task",
-    postgres_conn_id="d2b",
-    dag=dag_exec,
-)
-# Setting up Dependencies
-db >> create >> insert
+create_reviews = MySqlOperator(dag=dag,
+                           mysql_conn_id='mysql-connect', 
+                           task_id='create_reviews',
+                            sql='create_reviews_table.sql')
 
-if __name__ == "__main__":
-    dag_exec.cli()
+load_reviews = MySqlOperator(dag=dag,
+                           mysql_conn_id='mysql-connect', 
+                           task_id='load_reviews',
+                            sql='load_reviews.sql')
+
+create_shipment_deliveries = MySqlOperator(dag=dag,
+                           mysql_conn_id='mysql-connect', 
+                           task_id='create_shipment_deliveries',
+                            sql='create_shipment_deliveries_table.sql')
+
+load_shipment_deliveries = MySqlOperator(dag=dag,
+                           mysql_conn_id='mysql-connect', 
+                           task_id='load_shipment_deliveries',
+                            sql='load_shipment_deliveries.sql')
+
+
+create_table >> load_orders >> create_reviews >> load_reviews >> create_shipment_deliveries >> load_reviews
