@@ -29,23 +29,23 @@ dag_exec = DAG(
 # Set the Tasks
 
 db = MySqlOperator(
-    sql="sql/db.sql",
+    sql="sql/create_database.sql",
     task_id="createdb_task",
-    postgres_conssn_id="dwh",
+    postgres_conssn_id="d2b",
     dag=dag_exec,
 )
 
 create = PostgresOperator(
     sql="sql/create_table.sql",
     task_id="createtable_task",
-    postgres_conssn_id="dwh",
+    postgres_conssn_id="d2b",
     dag=dag_exec,
 )
 
 insert = PostgresOperator(
-    sql="sql/insert.sql",
+    sql="sql/load_data.sql",
     task_id="insertdata_task",
-    postgres_conn_id="dwh",
+    postgres_conn_id="d2b",
     dag=dag_exec,
 )
 # Setting up Dependencies
