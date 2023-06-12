@@ -2612,3 +2612,514 @@ Please take a look at these docs to improve your DAG import time:
 [2023-06-10T18:51:52.988+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:51:52.987+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2023-06-10T18:51:53.033+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:51:53.033+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
 [2023-06-10T18:51:53.486+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 1.116 seconds
+[2023-06-10T18:52:23.995+0000] {processor.py:157} INFO - Started process (PID=10310) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:52:23.997+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:52:23.999+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:52:23.998+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:52:24.583+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:52:24.612+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:52:24.612+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:52:24.664+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:52:24.663+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:52:24.778+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.792 seconds
+[2023-06-10T18:52:55.528+0000] {processor.py:157} INFO - Started process (PID=10382) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:52:55.529+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:52:55.531+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:52:55.530+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:52:56.121+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:52:56.148+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:52:56.148+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:52:56.189+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:52:56.189+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:52:56.312+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.803 seconds
+[2023-06-10T18:53:27.149+0000] {processor.py:157} INFO - Started process (PID=10451) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:53:27.150+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:53:27.152+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:53:27.151+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:53:27.706+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:53:27.738+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:53:27.738+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:53:27.786+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:53:27.785+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:53:27.832+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.689 seconds
+[2023-06-10T18:53:58.267+0000] {processor.py:157} INFO - Started process (PID=10523) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:53:58.275+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:53:58.276+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:53:58.276+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:53:58.732+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:53:58.765+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:53:58.764+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:53:58.796+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:53:58.796+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:53:58.948+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.684 seconds
+[2023-06-10T18:54:29.885+0000] {processor.py:157} INFO - Started process (PID=10589) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:54:29.886+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:54:29.887+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:54:29.887+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:54:30.360+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:54:30.386+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:54:30.385+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:54:30.418+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:54:30.418+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:54:30.453+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.572 seconds
+[2023-06-10T18:55:00.709+0000] {processor.py:157} INFO - Started process (PID=10655) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:55:00.731+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:55:00.732+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:55:00.732+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:55:01.229+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:55:01.257+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:55:01.256+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:55:01.298+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:55:01.298+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:55:01.372+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.671 seconds
+[2023-06-10T18:55:32.204+0000] {processor.py:157} INFO - Started process (PID=10721) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:55:32.280+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:55:32.283+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:55:32.283+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:55:36.054+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:55:36.083+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:55:36.083+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:55:36.122+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:55:36.121+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:55:36.303+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 4.106 seconds
+[2023-06-10T18:56:07.197+0000] {processor.py:157} INFO - Started process (PID=10793) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:56:07.199+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:56:07.200+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:56:07.199+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:56:07.712+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:56:07.738+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:56:07.738+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:56:07.776+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:56:07.776+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:56:07.822+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.628 seconds
+[2023-06-10T18:56:38.595+0000] {processor.py:157} INFO - Started process (PID=10859) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:56:38.596+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:56:38.597+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:56:38.597+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:56:39.208+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:56:39.233+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:56:39.233+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:56:39.266+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:56:39.265+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:56:39.306+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.715 seconds
+[2023-06-10T18:57:09.575+0000] {processor.py:157} INFO - Started process (PID=10927) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:57:09.586+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:57:09.587+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:57:09.587+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:57:10.069+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:57:10.109+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:57:10.109+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:57:10.296+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:57:10.295+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:57:10.347+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.778 seconds
+[2023-06-10T18:57:41.091+0000] {processor.py:157} INFO - Started process (PID=10997) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:57:41.124+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:57:41.125+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:57:41.125+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:57:41.615+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:57:41.641+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:57:41.641+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:57:41.673+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:57:41.673+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:57:41.705+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.619 seconds
+[2023-06-10T18:58:12.615+0000] {processor.py:157} INFO - Started process (PID=11065) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:58:12.617+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:58:12.618+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:58:12.618+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:58:13.136+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:58:13.165+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:58:13.165+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:58:13.199+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:58:13.199+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:58:13.235+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.626 seconds
+[2023-06-10T18:58:43.426+0000] {processor.py:157} INFO - Started process (PID=11130) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:58:43.429+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:58:43.431+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:58:43.431+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:58:43.924+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:58:43.951+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:58:43.950+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:58:44.115+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:58:44.115+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:58:44.160+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.748 seconds
+[2023-06-10T18:59:14.581+0000] {processor.py:157} INFO - Started process (PID=11197) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:59:14.582+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:59:14.583+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:59:14.582+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:59:15.102+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:59:15.136+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:59:15.136+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:59:15.170+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:59:15.169+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:59:15.325+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.748 seconds
+[2023-06-10T18:59:46.510+0000] {processor.py:157} INFO - Started process (PID=11265) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T18:59:46.524+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T18:59:46.527+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:59:46.526+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:59:47.024+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T18:59:47.050+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:59:47.050+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T18:59:47.082+0000] {logging_mixin.py:149} INFO - [2023-06-10T18:59:47.081+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T18:59:47.115+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.624 seconds
+[2023-06-10T19:00:17.567+0000] {processor.py:157} INFO - Started process (PID=11333) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:00:17.624+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:00:17.625+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:00:17.625+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:00:20.306+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:00:20.491+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:00:20.490+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:00:20.544+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:00:20.544+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:00:20.683+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 3.122 seconds
+[2023-06-10T19:00:51.610+0000] {processor.py:157} INFO - Started process (PID=11404) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:00:51.663+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:00:51.665+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:00:51.664+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:00:52.244+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:00:52.270+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:00:52.269+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:00:52.459+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:00:52.459+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:00:52.573+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.967 seconds
+[2023-06-10T19:01:24.185+0000] {processor.py:157} INFO - Started process (PID=11479) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:01:24.230+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:01:24.232+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:01:24.232+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:01:24.687+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:01:24.713+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:01:24.713+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:01:24.866+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:01:24.866+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:01:25.021+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.840 seconds
+[2023-06-10T19:01:55.434+0000] {processor.py:157} INFO - Started process (PID=11545) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:01:55.469+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:01:55.471+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:01:55.471+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:01:55.953+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:01:55.979+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:01:55.978+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:01:56.010+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:01:56.010+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:01:56.157+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.731 seconds
+[2023-06-10T19:02:26.883+0000] {processor.py:157} INFO - Started process (PID=11610) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:02:26.903+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:02:26.904+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:02:26.904+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:02:27.394+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:02:27.543+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:02:27.542+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:02:27.581+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:02:27.581+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:02:27.619+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.743 seconds
+[2023-06-10T19:02:58.342+0000] {processor.py:157} INFO - Started process (PID=11676) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:02:58.343+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:02:58.345+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:02:58.344+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:02:58.807+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:02:58.833+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:02:58.832+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:02:58.995+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:02:58.995+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:02:59.140+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.808 seconds
+[2023-06-10T19:03:30.211+0000] {processor.py:157} INFO - Started process (PID=11745) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:03:30.328+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:03:30.331+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:03:30.330+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:03:31.104+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:03:31.135+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:03:31.134+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:03:31.165+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:03:31.165+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:03:31.217+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 1.011 seconds
+[2023-06-10T19:04:01.567+0000] {processor.py:157} INFO - Started process (PID=11814) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:04:01.568+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:04:01.569+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:04:01.568+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:04:02.182+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:04:02.210+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:04:02.210+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:04:02.242+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:04:02.241+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:04:02.395+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.833 seconds
+[2023-06-10T19:04:32.474+0000] {processor.py:157} INFO - Started process (PID=11881) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:04:32.476+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:04:32.477+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:04:32.477+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:04:33.076+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:04:33.101+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:04:33.100+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:04:33.135+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:04:33.135+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:04:33.163+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.692 seconds
+[2023-06-10T19:05:03.722+0000] {processor.py:157} INFO - Started process (PID=11947) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:05:03.725+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:05:03.727+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:05:03.727+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:05:04.336+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:05:04.361+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:05:04.360+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:05:04.391+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:05:04.391+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:05:04.531+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.821 seconds
+[2023-06-10T19:05:35.347+0000] {processor.py:157} INFO - Started process (PID=12013) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:05:35.350+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:05:35.352+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:05:35.352+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:05:36.008+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:05:36.035+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:05:36.035+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:05:36.066+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:05:36.066+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:05:36.219+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.884 seconds
+[2023-06-10T19:06:06.946+0000] {processor.py:157} INFO - Started process (PID=12080) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:06:06.949+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:06:06.950+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:06:06.950+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:06:07.567+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:06:07.590+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:06:07.590+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:06:07.620+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:06:07.620+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:06:07.653+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.720 seconds
+[2023-06-10T19:06:38.351+0000] {processor.py:157} INFO - Started process (PID=12147) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:06:38.354+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:06:38.355+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:06:38.355+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:06:39.029+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:06:39.053+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:06:39.052+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:06:39.083+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:06:39.083+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:06:39.114+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.768 seconds
+[2023-06-10T19:07:09.793+0000] {processor.py:157} INFO - Started process (PID=12213) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:07:09.878+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:07:09.881+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:07:09.880+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:07:10.827+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:07:10.850+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:07:10.849+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:07:10.881+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:07:10.881+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:07:10.918+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 1.130 seconds
+[2023-06-10T19:07:41.100+0000] {processor.py:157} INFO - Started process (PID=12279) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:07:41.101+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:07:41.102+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:07:41.102+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:07:42.811+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:07:42.834+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:07:42.834+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:07:42.916+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:07:42.916+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:07:42.972+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 1.877 seconds
+[2023-06-10T19:08:13.459+0000] {processor.py:157} INFO - Started process (PID=12345) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:08:13.475+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:08:13.477+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:08:13.476+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:08:14.291+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:08:14.314+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:08:14.314+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:08:14.344+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:08:14.343+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:08:14.392+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.941 seconds
+[2023-06-10T19:08:44.909+0000] {processor.py:157} INFO - Started process (PID=12412) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:08:44.910+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:08:44.911+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:08:44.911+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:08:45.543+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:08:45.566+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:08:45.565+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:08:45.610+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:08:45.610+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:08:45.645+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.740 seconds
+[2023-06-10T19:09:16.485+0000] {processor.py:157} INFO - Started process (PID=12483) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:09:16.486+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:09:16.487+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:09:16.487+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:09:17.172+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:09:17.197+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:09:17.196+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:09:17.228+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:09:17.228+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:09:17.331+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.853 seconds
+[2023-06-10T19:09:47.995+0000] {processor.py:157} INFO - Started process (PID=12558) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:09:47.996+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:09:47.997+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:09:47.997+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:09:48.648+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:09:48.670+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:09:48.670+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:09:48.700+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:09:48.700+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:09:48.863+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.875 seconds
+[2023-06-10T19:10:19.896+0000] {processor.py:157} INFO - Started process (PID=12626) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:10:19.897+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:10:19.898+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:10:19.897+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:10:20.508+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:10:20.531+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:10:20.531+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:10:20.561+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:10:20.561+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:10:20.709+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.818 seconds
+[2023-06-10T19:10:51.581+0000] {processor.py:157} INFO - Started process (PID=12695) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:10:51.581+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:10:51.582+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:10:51.582+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:10:52.211+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:10:52.235+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:10:52.234+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:10:52.263+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:10:52.263+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:10:52.409+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.832 seconds
+[2023-06-10T19:11:22.515+0000] {processor.py:157} INFO - Started process (PID=12760) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:11:22.540+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:11:22.541+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:11:22.541+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:11:23.152+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:11:23.176+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:11:23.175+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:11:23.206+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:11:23.206+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:11:23.353+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.842 seconds
+[2023-06-10T19:11:54.049+0000] {processor.py:157} INFO - Started process (PID=12828) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:11:54.050+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:11:54.051+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:11:54.051+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:11:54.699+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:11:54.723+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:11:54.722+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:11:54.753+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:11:54.752+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:11:54.782+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.737 seconds
+[2023-06-10T19:12:25.512+0000] {processor.py:157} INFO - Started process (PID=12894) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:12:25.538+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:12:25.540+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:12:25.539+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:12:27.269+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:12:27.294+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:12:27.293+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:12:27.323+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:12:27.323+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:12:27.520+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 2.015 seconds
+[2023-06-10T19:12:58.043+0000] {processor.py:157} INFO - Started process (PID=12964) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:12:58.051+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:12:58.065+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:12:58.064+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:13:01.990+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:13:02.233+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:13:02.232+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:13:02.291+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:13:02.291+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:13:02.660+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 4.630 seconds
+[2023-06-10T19:13:33.323+0000] {processor.py:157} INFO - Started process (PID=13033) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:13:33.377+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:13:33.378+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:13:33.378+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:13:35.746+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:13:35.815+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:13:35.814+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:13:35.848+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:13:35.848+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:13:36.053+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 2.735 seconds
+[2023-06-10T19:14:07.393+0000] {processor.py:157} INFO - Started process (PID=13101) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:14:07.450+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:14:07.452+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:14:07.452+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:14:15.003+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:14:21.065+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:14:21.063+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:14:21.646+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:14:21.645+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:14:21.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 14.589 seconds
+[2023-06-10T19:14:58.533+0000] {processor.py:157} INFO - Started process (PID=13165) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:14:58.559+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:14:58.563+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:14:58.562+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:15:28.762+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:15:28.756+0000] {timeout.py:68} ERROR - Process timed out, PID: 13165
+[2023-06-10T19:15:29.509+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:15:29.044+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/savetodb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/savetodb.py", line 2, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 29, in <module>
+    from pandas.core.arrays import Categorical
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/__init__.py", line 20, in <module>
+    from pandas.core.arrays.string_arrow import ArrowStringArray
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/string_arrow.py", line 65, in <module>
+    import pyarrow.compute as pc
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/compute.py", line 18, in <module>
+    from pyarrow._compute import (  # noqa
+  File "pyarrow/_compute.pyx", line 1349, in init pyarrow._compute
+  File "pyarrow/_compute.pyx", line 799, in pyarrow._compute._min_count_doc
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/savetodb.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#reducing-dag-complexity, PID: 13165
+[2023-06-10T19:15:29.512+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:15:30.677+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 32.151 seconds
+[2023-06-10T19:16:18.569+0000] {processor.py:157} INFO - Started process (PID=13250) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:16:18.592+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:16:18.595+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:16:18.595+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:16:48.719+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:16:48.712+0000] {timeout.py:68} ERROR - Process timed out, PID: 13250
+[2023-06-10T19:16:50.728+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:16:49.022+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/savetodb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/savetodb.py", line 2, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 29, in <module>
+    from pandas.core.arrays import Categorical
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/__init__.py", line 11, in <module>
+    from pandas.core.arrays.interval import IntervalArray
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/interval.py", line 82, in <module>
+    from pandas.core.indexes.base import ensure_index
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/base.py", line 26, in <module>
+    import pandas._libs.join as libjoin
+  File "<frozen importlib._bootstrap>", line 416, in parent
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/savetodb.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#reducing-dag-complexity, PID: 13250
+[2023-06-10T19:16:50.730+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:16:51.862+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 33.306 seconds
+[2023-06-10T19:17:47.658+0000] {processor.py:157} INFO - Started process (PID=13345) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:17:47.960+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:17:47.961+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:17:47.961+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:18:17.995+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:18:17.988+0000] {timeout.py:68} ERROR - Process timed out, PID: 13345
+[2023-06-10T19:18:19.432+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:18:18.666+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/savetodb.py
+Traceback (most recent call last):
+  File "<frozen importlib._bootstrap_external>", line 87, in _path_is_mode_type
+  File "<frozen importlib._bootstrap_external>", line 81, in _path_stat
+FileNotFoundError: [Errno 2] No such file or directory: '/home/airflow/.local/lib/python3.7/site-packages/pandas/core/ops/__init__.cpython-37m-x86_64-linux-gnu.so'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/savetodb.py", line 2, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 29, in <module>
+    from pandas.core.arrays import Categorical
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/__init__.py", line 1, in <module>
+    from pandas.core.arrays.base import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/base.py", line 60, in <module>
+    from pandas.core import (
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 963, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 906, in _find_spec
+  File "<frozen importlib._bootstrap_external>", line 1280, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 1252, in _get_spec
+  File "<frozen importlib._bootstrap_external>", line 1383, in find_spec
+  File "<frozen importlib._bootstrap_external>", line 95, in _path_isfile
+  File "<frozen importlib._bootstrap_external>", line 87, in _path_is_mode_type
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/savetodb.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#reducing-dag-complexity, PID: 13345
+[2023-06-10T19:18:19.434+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:18:28.635+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 40.971 seconds
+[2023-06-10T19:19:03.900+0000] {processor.py:157} INFO - Started process (PID=13411) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:19:04.119+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:19:04.124+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:19:04.123+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:19:34.194+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:19:34.192+0000] {timeout.py:68} ERROR - Process timed out, PID: 13411
+[2023-06-10T19:19:35.599+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:19:34.819+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/savetodb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/savetodb.py", line 2, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 143, in <module>
+    from pandas.io.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/api.py", line 8, in <module>
+    from pandas.io.excel import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/excel/__init__.py", line 6, in <module>
+    from pandas.io.excel._odswriter import ODSWriter as _ODSWriter
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/excel/_odswriter.py", line 15, in <module>
+    from pandas.io.formats.excel import ExcelCell
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/excel.py", line 44, in <module>
+    from pandas.io.formats.css import (
+  File "<frozen importlib._bootstrap>", line 983, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 967, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 677, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 724, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 818, in get_code
+  File "<frozen importlib._bootstrap_external>", line 917, in get_data
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/savetodb.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#reducing-dag-complexity, PID: 13411
+[2023-06-10T19:19:35.626+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:19:51.182+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 47.291 seconds
+[2023-06-10T19:21:59.200+0000] {processor.py:157} INFO - Started process (PID=13530) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:21:59.379+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:21:59.383+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:21:59.382+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:22:29.474+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:22:29.473+0000] {timeout.py:68} ERROR - Process timed out, PID: 13530
+[2023-06-10T19:22:30.421+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:22:29.643+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/savetodb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/savetodb.py", line 2, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 48, in <module>
+    from pandas.core.groupby import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/__init__.py", line 1, in <module>
+    from pandas.core.groupby.generic import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/groupby/generic.py", line 64, in <module>
+    from pandas.core.aggregation import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/aggregation.py", line 33, in <module>
+    from pandas.core.indexes.api import Index
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/api.py", line 19, in <module>
+    from pandas.core.indexes.datetimes import DatetimeIndex
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/datetimes.py", line 62, in <module>
+    from pandas.core.indexes.datetimelike import DatetimeTimedeltaMixin
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/datetimelike.py", line 66, in <module>
+    from pandas.core.indexes.numeric import Int64Index
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/numeric.py", line 82, in <module>
+    class NumericIndex(Index):
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/indexes/numeric.py", line 119, in NumericIndex
+    np.dtype(np.float64): libindex.Float64Engine,
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/savetodb.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#reducing-dag-complexity, PID: 13530
+[2023-06-10T19:22:30.571+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:22:35.793+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 36.607 seconds
+[2023-06-10T19:23:06.382+0000] {processor.py:157} INFO - Started process (PID=13596) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:23:06.444+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:23:06.447+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:23:06.446+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:23:19.610+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:23:22.225+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:23:22.223+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:23:22.277+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:23:22.276+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:23:22.977+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 16.600 seconds
+[2023-06-10T19:23:53.378+0000] {processor.py:157} INFO - Started process (PID=13668) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:23:53.400+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:23:53.401+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:23:53.401+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:23:54.093+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:23:54.115+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:23:54.115+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:23:54.144+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:23:54.144+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:23:54.299+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.925 seconds
+[2023-06-10T19:24:24.729+0000] {processor.py:157} INFO - Started process (PID=13733) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:24:24.732+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:24:24.734+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:24:24.734+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:24:31.852+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:24:36.132+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:24:36.132+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:24:36.408+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:24:36.408+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:24:36.819+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 12.103 seconds
+[2023-06-10T19:25:09.641+0000] {processor.py:157} INFO - Started process (PID=13797) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:25:09.704+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:25:09.707+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:25:09.706+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:25:34.820+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:25:34.991+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:25:34.990+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:25:35.034+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:25:35.033+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:25:35.271+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 25.637 seconds
+[2023-06-10T19:26:06.430+0000] {processor.py:157} INFO - Started process (PID=13877) to work on /opt/airflow/dags/savetodb.py
+[2023-06-10T19:26:06.557+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-10T19:26:06.558+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:26:06.558+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:26:07.479+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-10T19:26:07.513+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:26:07.512+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-10T19:26:07.555+0000] {logging_mixin.py:149} INFO - [2023-06-10T19:26:07.555+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-09T00:00:00+00:00, run_after=2023-06-09T00:00:00+00:00
+[2023-06-10T19:26:07.710+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 1.285 seconds

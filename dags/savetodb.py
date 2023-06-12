@@ -5,6 +5,7 @@ from datetime import timedelta,datetime
 import airflow
 from airflow import DAG
 from airflow.operators.python import PythonOperator
+from airflow.providers.postgres.operators.postgres import PostgresOperator
 
 
 default_args = {
@@ -30,11 +31,27 @@ with DAG(
     schedule_interval='@once'
 )as dag:
     task1 = PythonOperator(
-        task_id='migrate',
+        task_id='load_orders_data',
         python_callable=load_raw_data,
         op_kwargs={
-            "path": "./data/locationClean.csv",
-            "table_name":"traffic_table"
+            "path": "./data/orders.csv",
+            "table_name":"orders"
         }
     )
-    
+    task2 = PythonOperator(
+        task_id='load_reviews_data',
+        python_callable=load_raw_data,
+        op_kwargs={
+            "path": "./data/reviews.csv",
+            "table_name":"reviews"
+        }
+    )
+    task3 = PythonOperator(
+        task_id='load_Shipments_deliveries_data',
+        python_callable=load_raw_data,
+        op_kwargs={
+            "path": "./data/shipments_deliveries.csv",
+            "table_name":"shipments_deliveries"
+        }
+    )
+    task1 >> task2 >> task3

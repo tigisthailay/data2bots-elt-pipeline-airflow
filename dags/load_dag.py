@@ -1,44 +1,55 @@
+#Importing modules
+
+from datetime import datetime, timedelta
 from airflow import DAG
-from airflow.operators.mysql_operator import MySqlOperator
+from airflow.providers.postgres.operators.postgres import PostgresOperator
+from airflow.utils.dates import 
 
-default_arg = {'owner': 'airflow', 'start_date': '2023-06-10'}
+#Define default and DAG-specific arguments
 
-dag = DAG('load-data',
-          default_args=default_arg,
-          schedule_interval='@once',
-          template_searchpath=['/usr/local/airflow/include/'])
+default_args = {
+    "owner": "tegisty",
+    "email": ["tigisthay13@gmail.com"],
+    "email_on_failaure": True,
+    "retries": 1,
+    "retry_delay": timedelta(minutes=5),
+}
 
-create_table = MySqlOperator(dag=dag,
-                           mysql_conn_id='mysql-connect', 
-                           task_id='create_table',
-                            sql='create_orders_table.sql')
+# Instantiate a DAG
+# Give the DAG name, configure the schedule, and set the DAG settings
+dag_exec = DAG(
+    dag_id="postgresoperator_demo",
+    default_args=default_args,
+    schedule_interval="@daily",
+    start_date=days_ago(1),
+    dagrun_timeout=timedelta(minutes=60),
+    description="use case of psql operator in airflow",
+)
 
+# Set the Tasks
 
+db = MySqlOperator(
+    sql="sql/db.sql",
+    task_id="createdb_task",
+    postgres_conssn_id="dwh",
+    dag=dag_exec,
+)
 
-load_orders = MySqlOperator(dag=dag,
-                           mysql_conn_id='mysql-connect', 
-                           task_id='load_orders',
-                            sql='load_orders.sql')
+create = PostgresOperator(
+    sql="sql/create_table.sql",
+    task_id="createtable_task",
+    postgres_conssn_id="dwh",
+    dag=dag_exec,
+)
 
-create_reviews = MySqlOperator(dag=dag,
-                           mysql_conn_id='mysql-connect', 
-                           task_id='create_reviews',
-                            sql='create_reviews_table.sql')
+insert = PostgresOperator(
+    sql="sql/insert.sql",
+    task_id="insertdata_task",
+    postgres_conn_id="dwh",
+    dag=dag_exec,
+)
+# Setting up Dependencies
+db >> create >> insert
 
-load_reviews = MySqlOperator(dag=dag,
-                           mysql_conn_id='mysql-connect', 
-                           task_id='load_reviews',
-                            sql='load_reviews.sql')
-
-create_shipment_deliveries = MySqlOperator(dag=dag,
-                           mysql_conn_id='mysql-connect', 
-                           task_id='create_shipment_deliveries',
-                            sql='create_shipment_deliveries_table.sql')
-
-load_shipment_deliveries = MySqlOperator(dag=dag,
-                           mysql_conn_id='mysql-connect', 
-                           task_id='load_shipment_deliveries',
-                            sql='load_shipment_deliveries.sql')
-
-
-create_table >> load_orders >> create_reviews >> load_reviews >> create_shipment_deliveries >> load_reviews
+if __name__ == "__main__":
+    dag_exec.cli()

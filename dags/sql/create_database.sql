@@ -1,4 +1,4 @@
-CREATE DATABASE IF NOT EXISTS "traffic_db"
+CREATE DATABASE IF NOT EXISTS "if_common"
     WITH
     OWNER = postgres
     ENCODING = 'UTF8'
