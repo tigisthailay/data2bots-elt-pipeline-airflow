@@ -3465,3 +3465,119 @@ Traceback (most recent call last):
 sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
 
 (Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-06-12T09:46:11.202+0000] {processor.py:157} INFO - Started process (PID=39) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T09:46:11.223+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T09:46:11.227+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:46:11.226+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T09:48:56.402+0000] {processor.py:157} INFO - Started process (PID=108) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T09:48:56.829+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T09:48:56.831+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:48:56.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T09:49:27.481+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:49:27.158+0000] {timeout.py:68} ERROR - Process timed out, PID: 108
+[2023-06-12T09:49:29.325+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:49:27.482+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/savetodb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/savetodb.py", line 2, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/__init__.py", line 15, in <module>
+    from pandas.compat.numpy import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/compat/numpy/__init__.py", line 7, in <module>
+    from pandas.util.version import Version
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/__init__.py", line 1, in <module>
+    from pandas.util._decorators import (  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly  # noqa
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+  File "pandas/_libs/hashtable.pyx", line 1, in init pandas._libs.hashtable
+  File "pandas/_libs/missing.pyx", line 1, in init pandas._libs.missing
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/_libs/tslibs/__init__.py", line 31, in <module>
+    from pandas._libs.tslibs.conversion import (
+  File "pandas/_libs/tslibs/conversion.pyx", line 1, in init pandas._libs.tslibs.conversion
+  File "<frozen importlib._bootstrap>", line 416, in parent
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/savetodb.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#reducing-dag-complexity, PID: 108
+[2023-06-12T09:49:29.328+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T09:49:29.598+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 33.206 seconds
+[2023-06-12T10:01:32.423+0000] {processor.py:157} INFO - Started process (PID=45) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T10:01:32.864+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T10:01:32.865+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:01:32.865+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:02:04.520+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:02:04.519+0000] {timeout.py:68} ERROR - Process timed out, PID: 45
+[2023-06-12T10:02:05.250+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:02:04.715+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/savetodb.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/savetodb.py", line 2, in <module>
+    import pandas as pd
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/__init__.py", line 50, in <module>
+    from pandas.core.api import (
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/api.py", line 29, in <module>
+    from pandas.core.arrays import Categorical
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/__init__.py", line 20, in <module>
+    from pandas.core.arrays.string_arrow import ArrowStringArray
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/arrays/string_arrow.py", line 65, in <module>
+    import pyarrow.compute as pc
+  File "/home/airflow/.local/lib/python3.7/site-packages/pyarrow/compute.py", line 18, in <module>
+    from pyarrow._compute import (  # noqa
+  File "pyarrow/_compute.pyx", line 1349, in init pyarrow._compute
+  File "pyarrow/_compute.pyx", line 799, in pyarrow._compute._min_count_doc
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/timeout.py", line 69, in handle_timeout
+    raise AirflowTaskTimeout(self.error_message)
+airflow.exceptions.AirflowTaskTimeout: DagBag import timeout for /opt/airflow/dags/savetodb.py after 30.0s.
+Please take a look at these docs to improve your DAG import time:
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#top-level-python-code
+* https://airflow.apache.org/docs/apache-airflow/2.6.1/best-practices.html#reducing-dag-complexity, PID: 45
+[2023-06-12T10:02:05.252+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:02:05.457+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 33.046 seconds
+[2023-06-12T10:02:47.494+0000] {processor.py:157} INFO - Started process (PID=120) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T10:02:47.730+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T10:02:47.733+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:02:47.732+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:03:07.523+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:03:10.914+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:03:10.912+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:03:11.321+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:03:11.320+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:03:11.976+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 24.499 seconds
+[2023-06-12T10:04:20.563+0000] {processor.py:157} INFO - Started process (PID=170) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T10:04:20.687+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T10:04:20.690+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:20.690+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:04:27.846+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:04:27.869+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:27.868+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:04:27.912+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:27.912+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:04:28.036+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 7.478 seconds
+[2023-06-12T10:04:58.694+0000] {processor.py:157} INFO - Started process (PID=257) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T10:04:58.824+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T10:04:58.825+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:58.825+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:05:10.502+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:05:11.357+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:11.356+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:05:11.416+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:11.416+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:05:11.641+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 12.963 seconds
+[2023-06-12T10:05:42.944+0000] {processor.py:157} INFO - Started process (PID=351) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T10:05:43.014+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T10:05:43.016+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:43.016+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:05:46.638+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:05:46.917+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:46.915+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:05:47.380+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:47.380+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:05:47.683+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 4.745 seconds
+[2023-06-12T10:06:18.081+0000] {processor.py:157} INFO - Started process (PID=420) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T10:06:18.162+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T10:06:18.163+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:18.163+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:06:18.787+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:06:18.828+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:18.827+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:06:18.861+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:18.861+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:06:18.972+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.898 seconds
+[2023-06-12T10:06:49.581+0000] {processor.py:157} INFO - Started process (PID=489) to work on /opt/airflow/dags/savetodb.py
+[2023-06-12T10:06:49.583+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/savetodb.py for tasks to queue
+[2023-06-12T10:06:49.585+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:49.584+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:06:50.107+0000] {processor.py:836} INFO - DAG(s) dict_keys(['save_to_db']) retrieved from /opt/airflow/dags/savetodb.py
+[2023-06-12T10:06:50.134+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:50.133+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:06:50.165+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:50.165+0000] {dag.py:3490} INFO - Setting next_dagrun for save_to_db to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:06:50.486+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/savetodb.py took 0.912 seconds

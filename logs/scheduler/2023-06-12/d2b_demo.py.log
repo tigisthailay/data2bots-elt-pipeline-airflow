@@ -1836,3 +1836,66 @@ Traceback (most recent call last):
 sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate host name "postgres" to address: Temporary failure in name resolution
 
 (Background on this error at: https://sqlalche.me/e/14/e3q8)
+[2023-06-12T09:46:13.154+0000] {processor.py:157} INFO - Started process (PID=44) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T09:46:13.328+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T09:46:13.330+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:46:13.330+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T09:46:13.588+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T09:46:13.980+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:46:13.979+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T09:46:14.110+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:46:14.110+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T09:46:14.275+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 1.126 seconds
+[2023-06-12T09:49:29.650+0000] {processor.py:157} INFO - Started process (PID=123) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T09:49:30.205+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T09:49:30.207+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:49:30.207+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T09:49:30.739+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T09:49:31.130+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:49:31.129+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T09:49:39.005+0000] {logging_mixin.py:149} INFO - [2023-06-12T09:49:39.005+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T09:49:39.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 9.728 seconds
+[2023-06-12T10:01:34.502+0000] {processor.py:157} INFO - Started process (PID=50) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:01:34.726+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T10:01:34.727+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:01:34.727+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:01:35.020+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:01:36.459+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:01:36.459+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:01:36.607+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:01:36.607+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:01:36.845+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 2.348 seconds
+[2023-06-12T10:03:12.161+0000] {processor.py:157} INFO - Started process (PID=134) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:03:12.194+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T10:03:12.196+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:03:12.196+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:03:19.674+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:03:24.129+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:03:24.129+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:03:28.197+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:03:28.196+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:03:28.979+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 16.822 seconds
+[2023-06-12T10:04:22.043+0000] {processor.py:157} INFO - Started process (PID=175) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:04:22.100+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T10:04:22.102+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:22.102+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:04:22.125+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:04:22.166+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:22.166+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:04:22.354+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:22.353+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:04:22.501+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.465 seconds
+[2023-06-12T10:04:52.547+0000] {processor.py:157} INFO - Started process (PID=241) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:04:52.548+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T10:04:52.549+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:52.549+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:04:52.556+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:04:52.592+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:52.592+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:04:52.653+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:04:52.652+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:04:52.798+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.257 seconds
+[2023-06-12T10:05:23.326+0000] {processor.py:157} INFO - Started process (PID=309) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:05:23.384+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T10:05:23.385+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:23.385+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:05:23.395+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:05:23.435+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:23.435+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:05:23.498+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:23.497+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:05:23.712+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.394 seconds
+[2023-06-12T10:05:53.943+0000] {processor.py:157} INFO - Started process (PID=377) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:05:54.060+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T10:05:54.062+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:54.061+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:05:54.083+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:05:54.205+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:54.205+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:05:54.287+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:05:54.287+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:05:54.515+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.587 seconds
+[2023-06-12T10:06:25.095+0000] {processor.py:157} INFO - Started process (PID=445) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:06:25.097+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-12T10:06:25.098+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:25.098+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:06:25.109+0000] {processor.py:836} INFO - DAG(s) dict_keys(['postgresoperator_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-12T10:06:25.158+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:25.158+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-12T10:06:25.220+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:25.220+0000] {dag.py:3490} INFO - Setting next_dagrun for postgresoperator_demo to 2023-06-11T00:00:00+00:00, run_after=2023-06-11T00:00:00+00:00
+[2023-06-12T10:06:25.397+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.308 seconds
