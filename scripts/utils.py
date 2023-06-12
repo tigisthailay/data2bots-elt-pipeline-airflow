@@ -1,7 +1,8 @@
 import json
 import sys
 import os
-import dvc.api
+import pandas as pd
+#import dvc.api
 
 sys.path.append(os.path.abspath(os.path.join("./scripts/")))
 
