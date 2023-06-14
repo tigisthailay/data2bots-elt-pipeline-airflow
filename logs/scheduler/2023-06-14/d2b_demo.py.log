@@ -1335,3 +1335,325 @@ sqlalchemy.exc.OperationalError: (psycopg2.OperationalError) could not translate
 [2023-06-14T10:20:57.704+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:20:57.704+0000] {dag.py:2726} INFO - Sync 1 DAGs
 [2023-06-14T10:20:57.737+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:20:57.737+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
 [2023-06-14T10:20:57.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.463 seconds
+[2023-06-14T10:21:28.100+0000] {processor.py:157} INFO - Started process (PID=766) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:21:28.101+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:21:28.102+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:21:28.102+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:21:28.115+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:21:28.149+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:21:28.149+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:21:28.199+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:21:28.198+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:21:28.334+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.239 seconds
+[2023-06-14T10:21:58.984+0000] {processor.py:157} INFO - Started process (PID=834) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:21:59.018+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:21:59.021+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:21:59.020+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:21:59.057+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:21:59.102+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:21:59.102+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:21:59.145+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:21:59.144+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:21:59.227+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.247 seconds
+[2023-06-14T10:22:29.680+0000] {processor.py:157} INFO - Started process (PID=902) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:22:29.712+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:22:29.713+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:22:29.713+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:22:29.728+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:22:29.770+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:22:29.770+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:22:29.814+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:22:29.813+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:22:29.900+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.229 seconds
+[2023-06-14T10:23:00.013+0000] {processor.py:157} INFO - Started process (PID=971) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:23:00.014+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:23:00.015+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:23:00.015+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:23:00.165+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:23:00.230+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:23:00.229+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:23:00.267+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:23:00.267+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:23:00.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.335 seconds
+[2023-06-14T10:23:31.469+0000] {processor.py:157} INFO - Started process (PID=1036) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:23:31.566+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:23:31.568+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:23:31.567+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:23:31.582+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:23:31.618+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:23:31.617+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:23:31.655+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:23:31.655+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:23:31.739+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.274 seconds
+[2023-06-14T10:24:08.045+0000] {processor.py:157} INFO - Started process (PID=1097) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:24:08.104+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:24:08.106+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:24:08.106+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:24:08.565+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:24:08.634+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:24:08.634+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:24:08.680+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:24:08.680+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:24:08.737+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.695 seconds
+[2023-06-14T10:24:39.578+0000] {processor.py:157} INFO - Started process (PID=1160) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:24:39.579+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:24:39.581+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:24:39.580+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:24:39.734+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:24:39.786+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:24:39.786+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:24:39.832+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:24:39.831+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:24:39.910+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.337 seconds
+[2023-06-14T10:25:10.219+0000] {processor.py:157} INFO - Started process (PID=1222) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:25:10.288+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:25:10.290+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:25:10.289+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:25:10.311+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:25:10.353+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:25:10.353+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:25:10.394+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:25:10.394+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:25:10.603+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.401 seconds
+[2023-06-14T10:25:40.840+0000] {processor.py:157} INFO - Started process (PID=1288) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:25:40.841+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:25:40.843+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:25:40.842+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:25:40.859+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:25:40.889+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:25:40.889+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:25:40.940+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:25:40.940+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:25:40.988+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.154 seconds
+[2023-06-14T10:26:11.817+0000] {processor.py:157} INFO - Started process (PID=1355) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:26:11.818+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:26:11.820+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:26:11.820+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:26:11.850+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:26:11.891+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:26:11.891+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:26:11.928+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:26:11.928+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:26:12.026+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.218 seconds
+[2023-06-14T10:26:42.141+0000] {processor.py:157} INFO - Started process (PID=1424) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:26:42.168+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:26:42.172+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:26:42.171+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:26:42.193+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:26:42.225+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:26:42.225+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:26:42.263+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:26:42.263+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:26:42.293+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.156 seconds
+[2023-06-14T10:27:12.640+0000] {processor.py:157} INFO - Started process (PID=1491) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:27:12.642+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:27:12.645+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:27:12.645+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:27:12.673+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:27:12.707+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:27:12.707+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:27:12.772+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:27:12.771+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:27:12.859+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.224 seconds
+[2023-06-14T10:27:43.010+0000] {processor.py:157} INFO - Started process (PID=1559) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:27:43.012+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:27:43.014+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:27:43.014+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:27:43.161+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:27:43.212+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:27:43.212+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:27:43.258+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:27:43.258+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:27:43.410+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.411 seconds
+[2023-06-14T10:28:13.739+0000] {processor.py:157} INFO - Started process (PID=1627) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:28:13.741+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:28:13.742+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:28:13.742+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:28:13.762+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:28:13.803+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:28:13.802+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:28:13.845+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:28:13.844+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:28:13.913+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.179 seconds
+[2023-06-14T10:28:44.149+0000] {processor.py:157} INFO - Started process (PID=1696) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:28:44.173+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:28:44.174+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:28:44.174+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:28:44.191+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:28:44.232+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:28:44.232+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:28:44.283+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:28:44.283+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:28:44.317+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.176 seconds
+[2023-06-14T10:29:15.015+0000] {processor.py:157} INFO - Started process (PID=1765) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:29:15.016+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:29:15.018+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:29:15.018+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:29:15.038+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:29:15.073+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:29:15.073+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:29:15.112+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:29:15.112+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:29:15.168+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.163 seconds
+[2023-06-14T10:29:45.301+0000] {processor.py:157} INFO - Started process (PID=1833) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:29:45.322+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:29:45.324+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:29:45.324+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:29:45.340+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:29:45.377+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:29:45.377+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:29:45.416+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:29:45.415+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:29:45.465+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.172 seconds
+[2023-06-14T10:30:15.886+0000] {processor.py:157} INFO - Started process (PID=1901) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:30:15.888+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:30:15.889+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:30:15.889+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:30:15.905+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:30:15.949+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:30:15.949+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:30:15.999+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:30:15.999+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:30:16.053+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.175 seconds
+[2023-06-14T10:30:46.405+0000] {processor.py:157} INFO - Started process (PID=1969) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:30:46.426+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:30:46.428+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:30:46.428+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:30:46.493+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:30:46.526+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:30:46.525+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:30:46.570+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:30:46.570+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:30:46.623+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.226 seconds
+[2023-06-14T10:31:17.493+0000] {processor.py:157} INFO - Started process (PID=2036) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:31:17.495+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:31:17.497+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:31:17.496+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:31:17.526+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:31:17.596+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:31:17.596+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:31:17.674+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:31:17.673+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:31:17.865+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.386 seconds
+[2023-06-14T10:31:48.489+0000] {processor.py:157} INFO - Started process (PID=2111) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:31:48.505+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:31:48.505+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:31:48.505+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:31:48.521+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:31:48.554+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:31:48.554+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:31:48.596+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:31:48.596+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:31:48.645+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.165 seconds
+[2023-06-14T10:32:19.485+0000] {processor.py:157} INFO - Started process (PID=2179) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:32:19.488+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:32:19.491+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:32:19.491+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:32:19.516+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:32:19.556+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:32:19.556+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:32:19.595+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:32:19.594+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:32:19.646+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.177 seconds
+[2023-06-14T10:32:50.422+0000] {processor.py:157} INFO - Started process (PID=2247) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:32:50.444+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:32:50.445+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:32:50.445+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:32:50.461+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:32:50.492+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:32:50.492+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:32:50.534+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:32:50.534+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:32:50.578+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.164 seconds
+[2023-06-14T10:33:20.631+0000] {processor.py:157} INFO - Started process (PID=2316) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:33:20.633+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:33:20.634+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:33:20.634+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:33:20.654+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:33:20.702+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:33:20.701+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:33:20.800+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:33:20.800+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:33:20.863+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.239 seconds
+[2023-06-14T10:33:51.375+0000] {processor.py:157} INFO - Started process (PID=2383) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:33:51.380+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:33:51.381+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:33:51.381+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:33:51.400+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:33:51.437+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:33:51.437+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:33:51.483+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:33:51.483+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:33:51.545+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.177 seconds
+[2023-06-14T10:34:21.684+0000] {processor.py:157} INFO - Started process (PID=2451) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:34:21.685+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:34:21.686+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:34:21.686+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:34:21.702+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:34:21.736+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:34:21.735+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:34:21.773+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:34:21.773+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:34:21.836+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.160 seconds
+[2023-06-14T10:34:52.521+0000] {processor.py:157} INFO - Started process (PID=2519) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:34:52.536+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:34:52.536+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:34:52.536+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:34:52.555+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:34:52.588+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:34:52.588+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:34:52.632+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:34:52.632+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:34:52.662+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.145 seconds
+[2023-06-14T10:35:22.772+0000] {processor.py:157} INFO - Started process (PID=2587) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:35:22.774+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:35:22.775+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:35:22.774+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:35:22.789+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:35:22.823+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:35:22.823+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:35:22.862+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:35:22.862+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:35:22.920+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.152 seconds
+[2023-06-14T10:35:53.571+0000] {processor.py:157} INFO - Started process (PID=2655) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:35:53.580+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:35:53.581+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:35:53.581+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:35:53.596+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:35:53.629+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:35:53.629+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:35:53.670+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:35:53.670+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:35:53.708+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.146 seconds
+[2023-06-14T10:36:24.271+0000] {processor.py:157} INFO - Started process (PID=2724) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:36:24.275+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:36:24.277+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:36:24.276+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:36:24.300+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:36:24.369+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:36:24.369+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:36:24.422+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:36:24.422+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:36:24.578+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.313 seconds
+[2023-06-14T10:36:55.381+0000] {processor.py:157} INFO - Started process (PID=2793) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:36:55.398+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:36:55.400+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:36:55.399+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:36:55.420+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:36:55.461+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:36:55.461+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:36:55.530+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:36:55.530+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:36:55.581+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.207 seconds
+[2023-06-14T10:37:26.340+0000] {processor.py:157} INFO - Started process (PID=2861) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:37:26.343+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:37:26.345+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:37:26.345+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:37:26.378+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:37:26.415+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:37:26.415+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:37:26.460+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:37:26.460+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:37:26.498+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.171 seconds
+[2023-06-14T10:37:56.724+0000] {processor.py:157} INFO - Started process (PID=2930) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:37:56.743+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:37:56.744+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:37:56.743+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:37:56.759+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:37:56.792+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:37:56.792+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:37:56.830+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:37:56.830+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:37:56.863+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.148 seconds
+[2023-06-14T10:38:27.112+0000] {processor.py:157} INFO - Started process (PID=2998) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:38:27.128+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:38:27.128+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:38:27.128+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:38:27.142+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:38:27.179+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:38:27.179+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:38:27.215+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:38:27.215+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:38:27.255+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.148 seconds
+[2023-06-14T10:38:57.754+0000] {processor.py:157} INFO - Started process (PID=3066) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:38:57.756+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:38:57.758+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:38:57.758+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:38:57.788+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:38:57.978+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:38:57.978+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:38:58.239+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:38:58.238+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:38:58.365+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.619 seconds
+[2023-06-14T10:39:29.323+0000] {processor.py:157} INFO - Started process (PID=3135) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:39:29.347+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:39:29.349+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:39:29.349+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:39:29.376+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:39:29.455+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:39:29.455+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:39:29.512+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:39:29.512+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:39:29.577+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.260 seconds
+[2023-06-14T10:39:59.767+0000] {processor.py:157} INFO - Started process (PID=3202) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:39:59.768+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:39:59.769+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:39:59.769+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:39:59.787+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:39:59.823+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:39:59.823+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:39:59.860+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:39:59.860+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:39:59.899+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.136 seconds
+[2023-06-14T10:40:30.017+0000] {processor.py:157} INFO - Started process (PID=3270) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:40:30.040+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:40:30.041+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:40:30.040+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:40:30.060+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:40:30.101+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:40:30.100+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:40:30.141+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:40:30.141+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:40:30.199+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.191 seconds
+[2023-06-14T10:41:00.764+0000] {processor.py:157} INFO - Started process (PID=3338) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:41:00.766+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:41:00.768+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:41:00.767+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:41:00.791+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:41:00.829+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:41:00.829+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:41:00.868+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:41:00.868+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:41:00.925+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.168 seconds
+[2023-06-14T10:41:30.982+0000] {processor.py:157} INFO - Started process (PID=3406) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:41:30.999+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:41:31.001+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:41:31.000+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:41:31.025+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:41:31.067+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:41:31.067+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:41:31.116+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:41:31.116+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:41:31.155+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.178 seconds
+[2023-06-14T10:42:01.195+0000] {processor.py:157} INFO - Started process (PID=3474) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:42:01.196+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:42:01.197+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:42:01.197+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:42:01.212+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:42:01.243+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:42:01.243+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:42:01.278+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:42:01.277+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:42:01.318+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.129 seconds
+[2023-06-14T10:42:31.475+0000] {processor.py:157} INFO - Started process (PID=3541) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:42:31.492+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:42:31.494+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:42:31.494+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:42:31.514+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:42:31.545+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:42:31.545+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:42:31.595+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:42:31.595+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:42:31.637+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.167 seconds
+[2023-06-14T10:43:01.860+0000] {processor.py:157} INFO - Started process (PID=3605) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:43:01.862+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:43:01.863+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:43:01.863+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:43:01.880+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:43:01.925+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:43:01.925+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:43:01.991+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:43:01.991+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:43:02.051+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.200 seconds
+[2023-06-14T10:43:32.290+0000] {processor.py:157} INFO - Started process (PID=3672) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:43:32.318+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:43:32.319+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:43:32.319+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:43:32.334+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:43:32.367+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:43:32.367+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:43:32.403+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:43:32.402+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:43:32.431+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.146 seconds
+[2023-06-14T10:44:02.668+0000] {processor.py:157} INFO - Started process (PID=3740) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:44:02.693+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:44:02.694+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:44:02.694+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:44:02.716+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:44:02.749+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:44:02.749+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:44:02.788+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:44:02.788+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:44:02.833+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.175 seconds
+[2023-06-14T10:44:33.410+0000] {processor.py:157} INFO - Started process (PID=3809) to work on /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:44:33.648+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/d2b_demo.py for tasks to queue
+[2023-06-14T10:44:33.649+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:44:33.649+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:44:33.672+0000] {processor.py:836} INFO - DAG(s) dict_keys(['data2bots_demo']) retrieved from /opt/airflow/dags/d2b_demo.py
+[2023-06-14T10:44:33.735+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:44:33.735+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-14T10:44:33.786+0000] {logging_mixin.py:149} INFO - [2023-06-14T10:44:33.786+0000] {dag.py:3490} INFO - Setting next_dagrun for data2bots_demo to None, run_after=None
+[2023-06-14T10:44:34.043+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/d2b_demo.py took 0.640 seconds

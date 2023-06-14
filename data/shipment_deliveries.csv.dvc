@@ -1,0 +1,4 @@
+outs:
+- md5: a443c1f5f3db8ceb4d83aac95bcd80a7
+  size: 172237
+  path: shipment_deliveries.csv
