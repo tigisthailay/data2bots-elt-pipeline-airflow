@@ -42,14 +42,14 @@ create = PostgresOperator(
     dag=dag_exec,
 )
 
-insert = PostgresOperator(
+update = PostgresOperator(
     sql="sql/insert.sql",
-    task_id="insertdata_task",
+    task_id="update",
     postgres_conn_id="dwh",
     dag=dag_exec,
 )
 # Setting up Dependencies
-db >> create >> insert
+db >> create >> update
 
 if __name__ == "__main__":
     dag_exec.cli()

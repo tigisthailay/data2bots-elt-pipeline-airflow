@@ -1,4 +1,5 @@
 from airflow import DAG
+import os
 from airflow.operators.mysql_operator import MySqlOperator
 
 default_arg = {'owner': 'airflow', 'start_date': '2023-06-10'}
@@ -6,7 +7,7 @@ default_arg = {'owner': 'airflow', 'start_date': '2023-06-10'}
 dag = DAG('load-data',
           default_args=default_arg,
           schedule_interval='@once',
-          template_searchpath=['/usr/local/airflow/dags/sql/'])
+          template_searchpath=['../dags/sql/'])
 
 create_table = MySqlOperator(dag=dag,
                            mysql_conn_id='d2b', 
