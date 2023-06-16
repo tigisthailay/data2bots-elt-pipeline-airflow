@@ -1,19 +1,29 @@
 /* 
-Total number of undelivered shipments
+Total number of orders placed on public holiday of every month of previous year
 */
+
+
+/* Declar variables*/
+DECLARE @previous_year int, @drived_dim_date DATE
+
+/* set values to the variables
+param: 
+- GETDATE(): to get current date of the database system.
+- DATEADD(): to get previous year.
+- YEAR(): to extract the Year part.
+*/
+SET @previous_year = YEAR(DATEADD(year, -1, GETDATE()))
+SET @drived_dim_date = (
+    SELECT CONCAT(year_num, "-", month_of_the_year_num, "-", day_of_the_month_num) FROM dim_dates
+    WHERE year_num = @previous_year AND day_of_the_week_num BETWEEN 1 AND 5 AND working_day = 'false'
+
 with source as (
     select *
     from {{ref('feature')}}
 ),
 destination as (
-    SELECT COUNT(*) FROM AS tt_undelivered_items
-    FROM shipments_deliveries 
-    INNER JOIN orders
-    ON shipments_deliveries.order_id = orders.order_id
-    WHERE shipments_deliveries.shipment_date = NULL
-    AND shipments_deliveries.delivery_date = NULL
-    AND CONVERT(DATE,GETDATE()) = DATEADD(day, 15, orders.order_date)
-    AND  = NULL
+    SELECT SUM(quantity) as tt_order_hol_month FROM orders, dim_dates
+    WHERE orders.order_date = @drived_dim_date
 )
 SELECT *
 FROM destination
