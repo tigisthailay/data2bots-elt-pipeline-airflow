@@ -12,10 +12,12 @@ param:
 - DATEADD(): to get previous year.
 - YEAR(): to extract the Year part.
 */
+
 SET @previous_year = YEAR(DATEADD(year, -1, GETDATE()))
 SET @drived_dim_date = (
-    SELECT CONCAT(year_num, "-", month_of_the_year_num, "-", day_of_the_month_num) FROM dim_dates
+    SELECT CONCAT(year_num, '-', month_of_the_year_num, '-', day_of_the_month_num) FROM dim_dates
     WHERE year_num = @previous_year AND day_of_the_week_num BETWEEN 1 AND 5 AND working_day = 'false'
+)
 
 with source as (
     select *
@@ -24,6 +26,7 @@ with source as (
 destination as (
     SELECT SUM(quantity) as tt_order_hol_month FROM orders, dim_dates
     WHERE orders.order_date = @drived_dim_date
+    GROUP BY MONTH(orders.order_date)
 )
 SELECT *
 FROM destination
