@@ -1,0 +1,936 @@
+[2023-06-16T00:39:03.396+0000] {processor.py:157} INFO - Started process (PID=71) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:39:03.398+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:39:03.399+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:39:03.398+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:39:04.436+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:39:04.363+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:39:04.437+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:39:04.544+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 1.155 seconds
+[2023-06-16T00:40:16.712+0000] {processor.py:157} INFO - Started process (PID=146) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:40:16.991+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:40:16.993+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:40:16.993+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:40:17.215+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:40:17.174+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:40:17.215+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:40:17.376+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.678 seconds
+[2023-06-16T00:41:57.743+0000] {processor.py:157} INFO - Started process (PID=205) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:41:57.744+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:41:57.746+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:41:57.746+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:41:57.794+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:41:57.792+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:41:57.794+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:41:57.843+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.107 seconds
+[2023-06-16T00:42:28.782+0000] {processor.py:157} INFO - Started process (PID=274) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:42:28.783+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:42:28.784+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:42:28.784+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:42:28.796+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:42:28.795+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:42:28.796+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:42:28.836+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.058 seconds
+[2023-06-16T00:43:01.107+0000] {processor.py:157} INFO - Started process (PID=342) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:43:01.152+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:43:01.156+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:43:01.156+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:43:01.179+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:43:01.177+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:43:01.179+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:43:01.512+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.423 seconds
+[2023-06-16T00:43:31.553+0000] {processor.py:157} INFO - Started process (PID=410) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:43:31.660+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:43:31.664+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:43:31.663+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:43:31.702+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:43:31.699+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:43:31.702+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:43:31.842+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.295 seconds
+[2023-06-16T00:44:02.416+0000] {processor.py:157} INFO - Started process (PID=476) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:44:02.417+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:44:02.417+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:44:02.417+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:44:02.429+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:44:02.428+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:44:02.429+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:44:02.519+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.107 seconds
+[2023-06-16T00:44:37.422+0000] {processor.py:157} INFO - Started process (PID=526) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:44:37.611+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:44:37.611+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:44:37.611+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:44:37.867+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:44:37.771+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:44:37.868+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:44:38.283+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.867 seconds
+[2023-06-16T00:45:14.471+0000] {processor.py:157} INFO - Started process (PID=578) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:45:14.536+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:45:14.537+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:45:14.537+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:45:14.552+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:45:14.551+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:45:14.553+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:45:14.816+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.351 seconds
+[2023-06-16T00:45:50.142+0000] {processor.py:157} INFO - Started process (PID=636) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:45:50.780+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:45:50.785+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:45:50.784+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:45:51.551+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:45:51.549+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:45:51.552+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:45:52.205+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 2.075 seconds
+[2023-06-16T00:46:41.883+0000] {processor.py:157} INFO - Started process (PID=693) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:46:41.950+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:46:41.952+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:46:41.951+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:46:42.014+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:46:42.013+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:46:42.015+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:46:42.536+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.660 seconds
+[2023-06-16T00:47:24.405+0000] {processor.py:157} INFO - Started process (PID=762) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:47:24.444+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:47:24.448+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:47:24.448+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:47:24.501+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:47:24.496+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:47:24.502+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:47:24.879+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.481 seconds
+[2023-06-16T00:48:40.370+0000] {processor.py:157} INFO - Started process (PID=835) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:48:40.435+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:48:40.439+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:48:40.438+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:48:41.048+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:48:40.826+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:48:41.049+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:48:41.244+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.885 seconds
+[2023-06-16T00:49:19.511+0000] {processor.py:157} INFO - Started process (PID=895) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:49:19.553+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:49:19.557+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:49:19.556+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:49:19.608+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:49:19.605+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:49:19.610+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:49:19.760+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.253 seconds
+[2023-06-16T00:49:49.877+0000] {processor.py:157} INFO - Started process (PID=963) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:49:49.878+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:49:49.879+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:49:49.879+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:49:49.892+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:49:49.891+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:49:49.892+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:49:50.019+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.146 seconds
+[2023-06-16T00:50:25.114+0000] {processor.py:157} INFO - Started process (PID=1028) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:50:25.292+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:50:25.295+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:50:25.295+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:50:25.332+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:50:25.331+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:50:25.333+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:50:25.435+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.326 seconds
+[2023-06-16T00:50:59.700+0000] {processor.py:157} INFO - Started process (PID=1090) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:50:59.755+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:50:59.759+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:50:59.758+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:50:59.791+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:50:59.789+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:50:59.791+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:50:59.965+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.271 seconds
+[2023-06-16T00:51:33.810+0000] {processor.py:157} INFO - Started process (PID=1157) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:51:33.858+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:51:33.860+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:51:33.860+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:51:34.259+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:51:34.230+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:51:34.259+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:51:34.494+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.699 seconds
+[2023-06-16T00:52:21.678+0000] {processor.py:157} INFO - Started process (PID=1188) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:52:21.679+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:52:21.680+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:52:21.680+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:52:22.372+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:52:22.202+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:52:22.373+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:52:22.531+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.860 seconds
+[2023-06-16T00:57:16.472+0000] {processor.py:157} INFO - Started process (PID=54) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:57:16.625+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:57:16.626+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:57:16.626+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:57:18.996+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:57:18.923+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:57:18.996+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:57:19.129+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 2.667 seconds
+[2023-06-16T00:58:58.653+0000] {processor.py:157} INFO - Started process (PID=127) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:58:59.000+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T00:58:59.003+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:58:59.003+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:59:00.386+0000] {logging_mixin.py:149} INFO - [2023-06-16T00:59:00.364+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T00:59:00.387+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T00:59:00.693+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 2.055 seconds
+[2023-06-16T01:01:52.199+0000] {processor.py:157} INFO - Started process (PID=206) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:01:52.471+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T01:01:52.475+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:01:52.474+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:01:53.764+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:01:53.567+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T01:01:53.765+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:01:53.928+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 1.735 seconds
+[2023-06-16T01:02:25.282+0000] {processor.py:157} INFO - Started process (PID=244) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:02:25.294+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T01:02:25.295+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:02:25.295+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:02:25.307+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:02:25.306+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T01:02:25.307+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:02:25.368+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.090 seconds
+[2023-06-16T01:02:55.566+0000] {processor.py:157} INFO - Started process (PID=304) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:02:55.567+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T01:02:55.568+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:02:55.568+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:02:55.586+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:02:55.584+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T01:02:55.586+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:02:55.718+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.157 seconds
+[2023-06-16T01:03:26.284+0000] {processor.py:157} INFO - Started process (PID=369) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:03:26.286+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T01:03:26.287+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:03:26.287+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:03:26.304+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:03:26.303+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T01:03:26.304+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:03:26.335+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.056 seconds
+[2023-06-16T01:03:56.394+0000] {processor.py:157} INFO - Started process (PID=437) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:03:56.396+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T01:03:56.397+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:03:56.397+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:03:56.421+0000] {logging_mixin.py:149} INFO - [2023-06-16T01:03:56.419+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T01:03:56.422+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T01:03:56.478+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.093 seconds
+[2023-06-16T09:58:09.355+0000] {processor.py:157} INFO - Started process (PID=47) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:58:09.513+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T09:58:09.515+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:58:09.515+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:58:10.174+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:58:10.114+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T09:58:10.175+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:58:10.269+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.923 seconds
+[2023-06-16T09:58:43.770+0000] {processor.py:157} INFO - Started process (PID=113) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:58:43.824+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T09:58:43.826+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:58:43.825+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:58:43.969+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:58:43.870+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T09:58:43.970+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:58:44.165+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.405 seconds
+[2023-06-16T09:59:14.304+0000] {processor.py:157} INFO - Started process (PID=177) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:59:14.361+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T09:59:14.365+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:59:14.365+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:59:14.402+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:59:14.400+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T09:59:14.402+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:59:14.493+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.194 seconds
+[2023-06-16T09:59:46.258+0000] {processor.py:157} INFO - Started process (PID=225) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:59:46.285+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T09:59:46.286+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:59:46.286+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:59:46.300+0000] {logging_mixin.py:149} INFO - [2023-06-16T09:59:46.299+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T09:59:46.300+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T09:59:46.839+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.586 seconds
+[2023-06-16T10:00:17.032+0000] {processor.py:157} INFO - Started process (PID=293) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:00:17.033+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:00:17.034+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:00:17.033+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:00:17.045+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:00:17.044+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:00:17.046+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:00:17.198+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.170 seconds
+[2023-06-16T10:00:54.780+0000] {processor.py:157} INFO - Started process (PID=363) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:00:55.151+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:00:55.155+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:00:55.155+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:00:56.604+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:00:56.483+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:00:56.604+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:00:56.734+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 1.967 seconds
+[2023-06-16T10:01:27.253+0000] {processor.py:157} INFO - Started process (PID=412) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:01:27.294+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:01:27.295+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:01:27.295+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:01:27.307+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:01:27.305+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:01:27.307+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:01:27.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.122 seconds
+[2023-06-16T10:01:59.156+0000] {processor.py:157} INFO - Started process (PID=478) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:01:59.159+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:01:59.161+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:01:59.161+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:01:59.181+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:01:59.179+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:01:59.181+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:01:59.371+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.228 seconds
+[2023-06-16T10:02:35.958+0000] {processor.py:157} INFO - Started process (PID=546) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:02:36.067+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:02:36.070+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:02:36.069+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:02:36.108+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:02:36.106+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:02:36.108+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:02:36.415+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.465 seconds
+[2023-06-16T10:03:08.125+0000] {processor.py:157} INFO - Started process (PID=585) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:03:08.168+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:03:08.170+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:03:08.170+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:03:08.195+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:03:08.194+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:03:08.196+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:03:08.268+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.148 seconds
+[2023-06-16T10:03:46.171+0000] {processor.py:157} INFO - Started process (PID=634) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:03:46.215+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:03:46.216+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:03:46.216+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:03:46.251+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:03:46.250+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:03:46.252+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:03:46.373+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.207 seconds
+[2023-06-16T10:05:49.550+0000] {processor.py:157} INFO - Started process (PID=713) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:05:49.968+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:05:49.972+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:05:49.971+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:05:50.889+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:05:50.800+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:05:50.890+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:05:51.411+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 1.865 seconds
+[2023-06-16T10:06:21.882+0000] {processor.py:157} INFO - Started process (PID=776) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:06:21.985+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:06:21.989+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:06:21.988+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:06:22.016+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:06:22.014+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:06:22.016+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:06:22.079+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.210 seconds
+[2023-06-16T10:06:52.416+0000] {processor.py:157} INFO - Started process (PID=844) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:06:52.417+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:06:52.418+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:06:52.418+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:06:52.707+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:06:52.703+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:06:52.707+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:06:52.853+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.442 seconds
+[2023-06-16T10:08:21.261+0000] {processor.py:157} INFO - Started process (PID=890) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:08:21.625+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:08:21.629+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:08:21.628+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:08:23.449+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:08:23.306+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:08:23.450+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:08:24.031+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 2.788 seconds
+[2023-06-16T10:13:41.332+0000] {processor.py:157} INFO - Started process (PID=48) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:13:41.450+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:13:41.451+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:13:41.451+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:13:42.357+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:13:42.285+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:13:42.357+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:13:42.464+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 1.137 seconds
+[2023-06-16T10:14:14.787+0000] {processor.py:157} INFO - Started process (PID=115) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:14:14.844+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:14:14.846+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:14:14.846+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:14:15.031+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:14:14.969+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:14:15.032+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:14:15.160+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.382 seconds
+[2023-06-16T10:14:45.243+0000] {processor.py:157} INFO - Started process (PID=180) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:14:45.305+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:14:45.308+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:14:45.307+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:14:45.339+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:14:45.338+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:14:45.340+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:14:45.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.222 seconds
+[2023-06-16T10:15:16.402+0000] {processor.py:157} INFO - Started process (PID=241) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:15:16.414+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:15:16.415+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:15:16.415+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:15:16.431+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:15:16.430+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:15:16.432+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:15:16.506+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.107 seconds
+[2023-06-16T10:15:47.178+0000] {processor.py:157} INFO - Started process (PID=309) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:15:47.179+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:15:47.180+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:15:47.180+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:15:47.191+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:15:47.190+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:15:47.192+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:15:47.329+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.154 seconds
+[2023-06-16T10:16:17.473+0000] {processor.py:157} INFO - Started process (PID=377) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:16:17.493+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:16:17.494+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:16:17.494+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:16:17.509+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:16:17.507+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:16:17.509+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:16:17.563+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.095 seconds
+[2023-06-16T10:16:47.772+0000] {processor.py:157} INFO - Started process (PID=445) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:16:47.831+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:16:47.831+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:16:47.831+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:16:47.842+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:16:47.841+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:16:47.843+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:16:47.971+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.203 seconds
+[2023-06-16T10:17:18.848+0000] {processor.py:157} INFO - Started process (PID=512) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:17:18.977+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:17:18.979+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:17:18.979+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:17:19.011+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:17:19.008+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:17:19.011+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:17:19.118+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.275 seconds
+[2023-06-16T10:18:15.521+0000] {processor.py:157} INFO - Started process (PID=574) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:18:15.577+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:18:15.579+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:18:15.578+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:18:15.705+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:18:15.692+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:18:15.705+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:18:15.764+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.263 seconds
+[2023-06-16T10:18:46.609+0000] {processor.py:157} INFO - Started process (PID=642) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:18:46.610+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:18:46.611+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:18:46.610+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:18:46.622+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:18:46.621+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:18:46.622+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:18:46.680+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.076 seconds
+[2023-06-16T10:19:17.237+0000] {processor.py:157} INFO - Started process (PID=710) to work on /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:19:17.262+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/sql/load_dag.py for tasks to queue
+[2023-06-16T10:19:17.263+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:19:17.263+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:19:17.275+0000] {logging_mixin.py:149} INFO - [2023-06-16T10:19:17.274+0000] {dagbag.py:447} ERROR - Failed to bag_dag: /opt/airflow/dags/sql/load_dag.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 445, in _process_modules
+    self.bag_dag(dag=dag, root_dag=dag)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 462, in bag_dag
+    self._bag_dag(dag=dag, root_dag=root_dag, recursive=True)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 470, in _bag_dag
+    check_cycle(dag)  # throws if a task cycle is found
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 78, in check_cycle
+    child_to_check = _check_adjacent_tasks(current_task_id, task)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/dag_cycle_tester.py", line 64, in _check_adjacent_tasks
+    raise AirflowDagCycleException(msg)
+airflow.exceptions.AirflowDagCycleException: Cycle detected in DAG: load-data. Faulty task: create_shipment_deliveries
+[2023-06-16T10:19:17.275+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/sql/load_dag.py
+[2023-06-16T10:19:17.321+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/sql/load_dag.py took 0.093 seconds
