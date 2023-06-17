@@ -7,7 +7,7 @@ with source as (
     from {{ref('feature')}}
 ),
 destination as (
-    SELECT COUNT(*) FROM AS tt_late_shipments
+    SELECT COUNT(*) AS tt_late_shipments
     FROM shipments_deliveries 
     INNER JOIN orders
     ON shipments_deliveries.order_id = orders.order_id
