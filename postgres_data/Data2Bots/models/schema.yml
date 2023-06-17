@@ -2,7 +2,7 @@
 version: 2
 
 sources:
-  - name: DATA2BOTS_CHALLENGE
+  - name: Data2Bots
     description: "Data Warehouse"
     database: if_common
     tables:
