@@ -1,0 +1,81 @@
+[2023-06-19T04:15:31.708+0000] {processor.py:157} INFO - Started process (PID=62) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:15:31.709+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T04:15:31.710+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:15:31.710+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:15:31.723+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:15:31.759+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:15:31.758+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T04:15:31.791+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:15:31.790+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T04:15:31.910+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.206 seconds
+[2023-06-19T04:17:19.581+0000] {processor.py:157} INFO - Started process (PID=146) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:17:19.608+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T04:17:19.609+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:17:19.609+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:17:19.793+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:17:20.032+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:17:20.032+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T04:17:20.226+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:17:20.225+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T04:17:46.308+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 26.732 seconds
+[2023-06-19T04:18:17.170+0000] {processor.py:157} INFO - Started process (PID=222) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:18:17.192+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T04:18:17.194+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:18:17.193+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:18:17.202+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:18:17.235+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:18:17.235+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T04:18:17.273+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:18:17.273+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T04:18:17.354+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.188 seconds
+[2023-06-19T04:18:48.180+0000] {processor.py:157} INFO - Started process (PID=291) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:18:48.209+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T04:18:48.211+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:18:48.211+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:18:48.227+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T04:18:48.259+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:18:48.258+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T04:18:48.293+0000] {logging_mixin.py:149} INFO - [2023-06-19T04:18:48.293+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T04:18:48.417+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.242 seconds
+[2023-06-19T18:42:59.691+0000] {processor.py:157} INFO - Started process (PID=53) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:42:59.727+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:42:59.728+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:42:59.728+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:42:59.741+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:42:59.782+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:42:59.782+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T18:42:59.816+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:42:59.816+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T18:42:59.932+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.246 seconds
+[2023-06-19T18:45:09.912+0000] {processor.py:157} INFO - Started process (PID=145) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:45:09.958+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:45:09.962+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:45:09.961+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:45:10.031+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:45:10.128+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:45:10.128+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T18:45:10.308+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:45:10.308+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T18:45:10.369+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.461 seconds
+[2023-06-19T18:45:40.553+0000] {processor.py:157} INFO - Started process (PID=213) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:45:40.582+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:45:40.583+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:45:40.582+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:45:40.591+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:45:40.621+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:45:40.620+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T18:45:40.655+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:45:40.655+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T18:45:40.707+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.157 seconds
+[2023-06-19T18:46:10.876+0000] {processor.py:157} INFO - Started process (PID=281) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:46:10.877+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:46:10.878+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:46:10.878+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:46:10.885+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:46:10.913+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:46:10.912+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T18:46:10.945+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:46:10.945+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T18:46:10.990+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.119 seconds
+[2023-06-19T18:46:41.221+0000] {processor.py:157} INFO - Started process (PID=349) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:46:41.222+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:46:41.223+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:46:41.222+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:46:41.232+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:46:41.261+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:46:41.261+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T18:46:41.293+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:46:41.293+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T18:46:41.327+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.111 seconds
+[2023-06-19T18:47:11.727+0000] {processor.py:157} INFO - Started process (PID=417) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:47:11.789+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:47:11.793+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:47:11.792+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:47:11.820+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:47:11.854+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:47:11.854+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T18:47:11.888+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:47:11.888+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T18:47:11.940+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.217 seconds
+[2023-06-19T18:47:42.168+0000] {processor.py:157} INFO - Started process (PID=485) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:47:42.169+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:47:42.170+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:47:42.170+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:47:42.177+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:47:42.205+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:47:42.205+0000] {dag.py:2726} INFO - Sync 1 DAGs
+[2023-06-19T18:47:42.239+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:47:42.239+0000] {dag.py:3490} INFO - Setting next_dagrun for dbt-debug to 2023-06-11T00:00:00+00:00, run_after=2023-06-12T00:00:00+00:00
+[2023-06-19T18:47:42.281+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/dbt_debug_dag.py took 0.119 seconds
+[2023-06-19T18:48:13.103+0000] {processor.py:157} INFO - Started process (PID=553) to work on /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:48:13.303+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/dbt_debug_dag.py for tasks to queue
+[2023-06-19T18:48:13.304+0000] {logging_mixin.py:149} INFO - [2023-06-19T18:48:13.303+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/dbt_debug_dag.py
+[2023-06-19T18:48:13.313+0000] {processor.py:836} INFO - DAG(s) dict_keys(['dbt-debug']) retrieved from /opt/airflow/dags/dbt_debug_dag.py

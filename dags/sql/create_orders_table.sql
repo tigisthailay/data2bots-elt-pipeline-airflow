@@ -1,4 +1,4 @@
-create table if not exists orders
+create table if not exists user1234_staging.orders
 (
     order_id int not null primary key,
     customer_id int NOT null foreign key,

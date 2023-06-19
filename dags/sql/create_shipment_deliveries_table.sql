@@ -1,4 +1,4 @@
-create table if not exists shipments_deliveries
+create table if not exists user1234_staging.shipments_deliveries
 (
     shipment_id int NOT NULL primary key,
     order_id int not null foreign key,
