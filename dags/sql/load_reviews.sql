@@ -1,5 +1,5 @@
 LOAD DATA LOCAL INFILE  
-'/usr/local/airflow/include/reviews.csv'
+'../data/reviews.csv'
 INTO TABLE user1234_staging.reviews  
 FIELDS TERMINATED BY ',' 
 ENCLOSED BY '"'

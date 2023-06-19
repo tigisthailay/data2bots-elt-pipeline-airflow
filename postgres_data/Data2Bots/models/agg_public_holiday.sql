@@ -15,7 +15,7 @@ param:
 
 SET @previous_year = YEAR(DATEADD(year, -1, GETDATE()))
 SET @drived_dim_date = (
-    SELECT CONCAT(year_num, '-', month_of_the_year_num, '-', day_of_the_month_num) FROM dim_dates
+    SELECT CONCAT(year_num, '-', month_of_the_year_num, '-', day_of_the_month_num) FROM if_common.dim_dates
     WHERE year_num = @previous_year AND day_of_the_week_num BETWEEN 1 AND 5 AND working_day = 'false'
 )
 
@@ -24,7 +24,7 @@ with source as (
     from {{ref('feature')}}
 ),
 destination as (
-    SELECT SUM(quantity) as tt_order_hol_month FROM orders, dim_dates
+    SELECT SUM(quantity) as tt_order_hol_month FROM user1234_staging.orders, if_common.dim_dates
     WHERE orders.order_date = @drived_dim_date
     GROUP BY MONTH(orders.order_date)
 )
