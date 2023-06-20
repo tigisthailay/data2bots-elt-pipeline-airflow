@@ -2,7 +2,6 @@
 
 <!-- Table of contents -->
 - [Objectives](#objectives)
-- [Data](#data)
 - [Repository overview](#repository-overview)
 - [Requirements](#requirements)
 - [Usage](#usage)
@@ -10,10 +9,7 @@
 - [Contrbutor](#contrbutors)
 
 ## Objectives
-
-
-
-## Data
+The objective of this project is to build an ELT pipeline (batch or streaming) that loads the business data in to the data2bots data warehouse and performs the transformation.
 
 ## Repository overview
  Structure of the repository:
@@ -22,7 +18,6 @@
         ├── screenshots  (Important screenshots)
         ├── postgres_data  (dbt configrations and models)
         ├── data    (contains data)
-        ├── redash  (contains the redash configuration)
         ├── scripts (contains the main script)
         │   ├── Extract_data.py (Data Extraction from the data source(S3))
         ├── notebooks	
