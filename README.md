@@ -41,6 +41,7 @@ The project requires the following:
 
 ## Approach
 - ELT
+![](postgres_data/Data2Bots/snapshots/ELT.png)
 
 ## Usage
 ### Docker-compose
