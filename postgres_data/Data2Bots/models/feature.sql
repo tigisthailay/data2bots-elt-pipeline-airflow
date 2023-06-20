@@ -3,7 +3,7 @@ from all tables of if_common database */
 
 with source as (
     select *
-    from {{ source('Postgres', 'user1234_staging.orders','user1234_staging.shipments_deliveries','user1234_staging.reviews','if_common.dim_products','if_common.dim_customers','if_common.dim_dates', 'if_common.dim_addresses') }}
+    from {{ source('d2b_accessment', 'tegidege9284_staging.orders','tegidege9284_staging.shipments_deliveries','tegidege9284_staging.reviews','if_common.dim_products','if_common.dim_customers','if_common.dim_dates', 'if_common.dim_addresses') }}
 ),
 destination as (
     SELECT orders.order_id, orders.customer_id, orders.order_date, orders.product_id, orders.unit_price, orders.quantity, orders.amount,

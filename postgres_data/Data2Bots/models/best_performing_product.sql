@@ -20,39 +20,39 @@ SET @is_holiday = (
 )
 
 SET @tt_late_shipment = (SELECT COUNT(*) AS tt_late_shipments
-    FROM user1234_staging.shipments_deliveries 
-    INNER JOIN user1234_staging.orders
+    FROM tegidege9284_staging.shipments_deliveries 
+    INNER JOIN tegidege9284_staging.orders
     ON shipments_deliveries.order_id = orders.order_id
     WHERE shipments_deliveries.shipment_date >= DATEADD(day, 6, orders.order_date)
     AND shipments_deliveries.delivery_date = 'NULL')
 
 SET @particular_late_shipment = (SELECT COUNT(order.product_id) AS particular_late_shipments
-    FROM user1234_staging.orders 
-    INNER JOIN user1234_staging.shipments_deliveries
+    FROM tegidege9284_staging.orders 
+    INNER JOIN tegidege9284_staging.shipments_deliveries
     ON shipments_deliveries.order_id = orders.order_id
     WHERE shipments_deliveries.shipment_date >= DATEADD(day, 6, orders.order_date)
     AND shipments_deliveries.delivery_date = 'NULL')
 
 SET @tt_early_shipments = (SELECT COUNT(*) AS tt_early_shipments
-    FROM user1234_staging.shipments_deliveries 
-    INNER JOIN user1234_staging.orders
+    FROM tegidege9284_staging.shipments_deliveries 
+    INNER JOIN tegidege9284_staging.orders
     ON shipments_deliveries.order_id = orders.order_id
     WHERE shipments_deliveries.shipment_date < DATEADD(day, 6, orders.order_date)
     AND shipments_deliveries.delivery_date != 'NULL')
 
 SET @particular_early_shipment = (SELECT COUNT(product_id) AS particular_early_shipment_early_shipments
-    FROM user1234_staging.orders 
-    INNER JOIN user1234_staging.shipments_deliveries
+    FROM tegidege9284_staging.orders 
+    INNER JOIN tegidege9284_staging.shipments_deliveries
     ON shipments_deliveries.order_id = orders.order_id
     WHERE shipments_deliveries.shipment_date < DATEADD(day, 6, orders.order_date)
     AND shipments_deliveries.delivery_date != 'NULL')
 
-SET @total_reviews = (SELECT count(*) over() FROM user1234_staging.reviews)
-SET @one_star = (SELECT COUNT(reviews) FROM user1234_staging.reviews WHERE reviews = 1)
-SET @two_star = (SELECT COUNT(reviews) FROM user1234_staging.reviews WHERE reviews = 2)
-SET @three_star = (SELECT COUNT(reviews) FROM user1234_staging.reviews WHERE reviews = 3)
-SET @four_star = (SELECT COUNT(reviews) FROM user1234_staging.reviews WHERE reviews = 4)
-SET @five_star = (SELECT COUNT(reviews) FROM user1234_staging.reviews WHERE reviews = 5)
+SET @total_reviews = (SELECT count(*) over() FROM tegidege9284_staging.reviews)
+SET @one_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 1)
+SET @two_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 2)
+SET @three_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 3)
+SET @four_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 4)
+SET @five_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 5)
 
 /* Start transformation*/
 
@@ -75,9 +75,9 @@ destination as (
     round(100 * @particular_late_shipment / @tt_late_shipments)  AS pct_late_shipments
 
     FROM if_common.dim_products
-    INNER JOIN user1234_staging.reviews ON dim_products.product_id = reviews.product_id 
-    INNER JOIN user1234_staging.orders on orders.product_id = dim_products.product_id
-    INNER JOIN user1234_staging.shipments_deliveries on shipments_deliveries.order_id = orders.order_id
+    INNER JOIN tegidege9284_staging.reviews ON dim_products.product_id = reviews.product_id 
+    INNER JOIN tegidege9284_staging.orders on orders.product_id = dim_products.product_id
+    INNER JOIN tegidege9284_staging.shipments_deliveries on shipments_deliveries.order_id = orders.order_id
     , if_common.dim_dates
     HAVING MAX(reviews) AND MAX(SUM(quantity))
     GROUP BY reviews

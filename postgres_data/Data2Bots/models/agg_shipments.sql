@@ -26,8 +26,8 @@ with source as (
 ),
 destination as (
     SELECT COUNT(*) AS tt_undelivered_items
-    FROM user1234_staging.shipments_deliveries 
-    INNER JOIN user1234_staging.orders
+    FROM tegidege9284_staging.shipments_deliveries 
+    INNER JOIN tegidege9284_staging.orders
     ON shipments_deliveries.order_id = orders.order_id
     WHERE shipments_deliveries.shipment_date = NULL
     AND shipments_deliveries.delivery_date = NULL
