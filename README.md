@@ -38,7 +38,9 @@ The project requires the following:
 2. Airflow
 3. redash
 4. postgres
-
+## DAGS
+![](Screenshots/airflow_dag.png)
+![](Screenshots/running_dag_files.png)
 ## Approach
 - ELT
 ![](postgres_data/Data2Bots/snapshots/ELT.png)
