@@ -1,1 +1,6 @@
 dbt-postgres==1.0.0
+matplotlib.pyplot
+pandas
+numpy
+airflow
+dvc
