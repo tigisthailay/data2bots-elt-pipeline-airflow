@@ -2532,3 +2532,339 @@ Traceback (most recent call last):
 NameError: name 'days_ago' is not defined
 [2023-06-12T10:06:23.066+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
 [2023-06-12T10:06:23.302+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.255 seconds
+[2023-06-12T10:06:54.129+0000] {processor.py:157} INFO - Started process (PID=511) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:06:54.279+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:06:54.280+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:54.280+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:06:54.283+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:06:54.282+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:06:54.284+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:06:54.407+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.284 seconds
+[2023-06-12T10:07:26.189+0000] {processor.py:157} INFO - Started process (PID=580) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:07:26.227+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:07:26.231+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:07:26.230+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:07:26.242+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:07:26.239+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:07:26.243+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:07:26.645+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.462 seconds
+[2023-06-12T10:07:56.830+0000] {processor.py:157} INFO - Started process (PID=647) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:07:56.832+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:07:56.833+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:07:56.833+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:07:56.837+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:07:56.835+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:07:56.838+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:07:57.003+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.189 seconds
+[2023-06-12T10:08:27.386+0000] {processor.py:157} INFO - Started process (PID=716) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:08:27.427+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:08:27.429+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:08:27.429+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:08:27.434+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:08:27.432+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:08:27.435+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:08:27.512+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.133 seconds
+[2023-06-12T10:09:04.893+0000] {processor.py:157} INFO - Started process (PID=782) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:09:04.947+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:09:04.949+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:09:04.948+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:09:04.952+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:09:04.951+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:09:04.953+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:09:05.043+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.155 seconds
+[2023-06-12T10:09:35.395+0000] {processor.py:157} INFO - Started process (PID=836) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:09:35.441+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:09:35.488+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:09:35.488+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:09:35.598+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:09:35.568+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:09:35.600+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:09:36.734+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 1.351 seconds
+[2023-06-12T10:10:10.953+0000] {processor.py:157} INFO - Started process (PID=885) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:10:11.024+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:10:11.025+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:10:11.025+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:10:11.028+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:10:11.027+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:10:11.029+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:10:11.168+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.219 seconds
+[2023-06-12T10:10:42.411+0000] {processor.py:157} INFO - Started process (PID=946) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:10:42.449+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:10:42.450+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:10:42.450+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:10:42.455+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:10:42.453+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:10:42.455+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:10:42.572+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.170 seconds
+[2023-06-12T10:11:14.954+0000] {processor.py:157} INFO - Started process (PID=1013) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:11:14.956+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:11:14.961+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:11:14.959+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:11:14.968+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:11:14.966+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:11:14.969+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:11:15.015+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.078 seconds
+[2023-06-12T10:11:54.129+0000] {processor.py:157} INFO - Started process (PID=1071) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:11:54.158+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:11:54.160+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:11:54.160+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:11:54.206+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:11:54.166+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:11:54.207+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:11:54.289+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.167 seconds
+[2023-06-12T10:12:47.575+0000] {processor.py:157} INFO - Started process (PID=1145) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:12:47.592+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:12:47.594+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:12:47.594+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:12:47.614+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:12:47.599+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:12:47.615+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:12:47.734+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.175 seconds
+[2023-06-12T10:13:18.261+0000] {processor.py:157} INFO - Started process (PID=1207) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:13:18.274+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:13:18.276+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:13:18.276+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:13:18.348+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:13:18.346+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:13:18.348+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:13:18.408+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.160 seconds
+[2023-06-12T10:13:48.535+0000] {processor.py:157} INFO - Started process (PID=1272) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:13:48.536+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:13:48.537+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:13:48.537+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:13:48.541+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:13:48.539+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:13:48.541+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:13:48.584+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.055 seconds
+[2023-06-12T10:14:44.150+0000] {processor.py:157} INFO - Started process (PID=1345) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:14:44.418+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:14:44.422+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:14:44.421+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:14:44.537+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:14:44.535+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:14:44.538+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:14:44.979+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.844 seconds
+[2023-06-12T10:15:16.309+0000] {processor.py:157} INFO - Started process (PID=1381) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:15:16.310+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:15:16.311+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:15:16.311+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:15:16.314+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:15:16.313+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:15:16.314+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:15:16.387+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.082 seconds
+[2023-06-12T10:15:46.656+0000] {processor.py:157} INFO - Started process (PID=1445) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:15:46.882+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:15:46.885+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:15:46.884+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:15:47.132+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:15:47.024+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:15:47.133+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:15:47.293+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.644 seconds
+[2023-06-12T10:16:21.011+0000] {processor.py:157} INFO - Started process (PID=1508) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:16:21.399+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:16:21.403+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:16:21.403+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:16:21.411+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:16:21.408+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:16:21.412+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:16:21.593+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.596 seconds
+[2023-06-12T10:16:51.920+0000] {processor.py:157} INFO - Started process (PID=1576) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:16:51.922+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:16:51.923+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:16:51.923+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:16:51.928+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:16:51.926+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:16:51.929+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:16:52.566+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.651 seconds
+[2023-06-12T10:17:23.330+0000] {processor.py:157} INFO - Started process (PID=1644) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:17:23.499+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:17:23.503+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:17:23.502+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:17:23.514+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:17:23.510+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:17:23.516+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:17:23.626+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.309 seconds
+[2023-06-12T10:18:04.121+0000] {processor.py:157} INFO - Started process (PID=1713) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:18:04.188+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:18:04.190+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:18:04.189+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:18:04.346+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:18:04.283+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:18:04.347+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:18:04.461+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.345 seconds
+[2023-06-12T10:18:34.884+0000] {processor.py:157} INFO - Started process (PID=1777) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:18:34.887+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:18:34.889+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:18:34.889+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:18:34.892+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:18:34.891+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:18:34.893+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:18:34.955+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.078 seconds
+[2023-06-12T10:19:05.263+0000] {processor.py:157} INFO - Started process (PID=1835) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:19:05.288+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:19:05.289+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:19:05.289+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:19:05.293+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:19:05.292+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:19:05.293+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:19:05.344+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.088 seconds
+[2023-06-12T10:19:35.861+0000] {processor.py:157} INFO - Started process (PID=1905) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:19:35.867+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:19:35.871+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:19:35.870+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:19:35.882+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:19:35.879+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:19:35.883+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:19:36.201+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.358 seconds
+[2023-06-12T10:20:07.119+0000] {processor.py:157} INFO - Started process (PID=1974) to work on /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:20:07.232+0000] {processor.py:826} INFO - Processing file /opt/airflow/dags/load_dag_data.py for tasks to queue
+[2023-06-12T10:20:07.235+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:20:07.234+0000] {dagbag.py:541} INFO - Filling up the DagBag from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:20:07.243+0000] {logging_mixin.py:149} INFO - [2023-06-12T10:20:07.241+0000] {dagbag.py:350} ERROR - Failed to import: /opt/airflow/dags/load_dag_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 346, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/load_dag_data.py", line 24, in <module>
+    start_date=days_ago(1),
+NameError: name 'days_ago' is not defined
+[2023-06-12T10:20:07.244+0000] {processor.py:838} WARNING - No viable dags retrieved from /opt/airflow/dags/load_dag_data.py
+[2023-06-12T10:20:07.473+0000] {processor.py:179} INFO - Processing /opt/airflow/dags/load_dag_data.py took 0.362 seconds

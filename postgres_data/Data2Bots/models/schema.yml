@@ -1,0 +1,135 @@
+/* schema */
+version: 2
+
+sources:
+  - name: Data2Bots
+    description: "Data Warehouse"
+    database: Postgres
+    tables:
+      - name: orders
+        description: "orders table"
+        columns:
+          - name: order_id
+          description: "The primary key for this table"
+          tests:
+          - unique
+          - not_null
+          name: customer_id
+          description: "The foriegn key for dim_customers table"
+          tests:
+          - not_null
+          name: order_date
+          description: "The order date of the product"
+          tests:
+          - not_null
+          name: product_id
+          description: "The foriegn key for dim_product table"
+          tests:
+          - not_null
+          name: unit_price
+          description: "The the price of the individual products"
+          tests:
+          - not_null
+          name: quantity
+          description: "The the quantity of orders"
+          tests:
+          - not_null
+          name: amount
+          description: "The total price of the ordered product"
+          tests:
+          - not_null
+
+      name: shipments_deliveries
+        description: "shipments_deliveries table"
+        columns:
+          - name: shipment_id
+          description: "The primary key for this table"
+          tests:
+          - unique
+          - not_null
+          name: order_id
+          description: "The foriegn key of orders table"
+          tests:
+          - not_null
+          name: delivery_date
+          description: "The date of delivery for a product"
+          tests:
+          - not_null
+          name: shipment_date
+          description: "The date of shipments product"
+          tests:
+          - not_null
+
+      name: reviews
+        description: "reviews table"
+        columns:
+          - name: review
+          description: "the review point of the product"
+          tests:
+          - not_null
+          - name: product_id
+          description: "the foriegn key of dim_product table"
+          tests:
+          - not_null
+
+      name: dim_products
+        description: "dim_products table"
+        columns:
+          - name: product_id
+          description: "The primary key for this table"
+          tests:
+          - unique
+          - not_null
+          - name: product_category
+          description: "the category of the products"
+          tests:
+          - not_null
+          - name: product_name
+          description: "the name of the products"
+          tests:
+          - not_null
+      
+      name: dim_customers
+        description: "dim_pcustomers table"
+        columns:
+          - name: customer_id
+          description: "The primary key for this table"
+          tests:
+          - unique
+          - not_null
+          - name: customer_name
+          description: "the name of customers"
+          tests:
+          - not_null
+          - name: postal_cod
+          description: "postal code of the customer"
+          tests:
+          - not_null
+
+      name: dim_addresses
+        description: "dim_addresses table"
+        columns:
+          - name: postal_code
+          description: "The primary key for this table"
+          tests:
+          - unique
+          - not_null
+          - name: country
+          description: "the country of the customer"
+          tests:
+          - not_null
+          - name: region
+          description: "the region of the country of the customer"
+          tests:
+          - not_null
+          - name: state
+          description: "the state of the region"
+          tests:
+          - not_null
+          - name: address
+          description: "the address of the customer"
+          tests:
+          - not_null
+      
+
+
