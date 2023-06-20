@@ -1,1 +1,0 @@
-CREATE SCHEMA user1234_staging;

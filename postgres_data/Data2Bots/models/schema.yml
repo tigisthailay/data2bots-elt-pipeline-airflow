@@ -4,7 +4,7 @@ version: 2
 sources:
   - name: Data2Bots
     description: "Data Warehouse"
-    database: if_common
+    database: Postgres
     tables:
       - name: orders
         description: "orders table"
