@@ -22,7 +22,7 @@ default_args = {
 }
 
 dag_d2b = DAG(
-    dag_id = "tegidege9284_d2b",
+    dag_id = "data2bots_demo",
     default_args=args,
     # schedule_interval='0 0 * * *',
     schedule_interval='@once',	
