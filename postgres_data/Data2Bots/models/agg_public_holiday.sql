@@ -27,6 +27,7 @@ destination as (
     SELECT SUM(quantity) as tt_order_hol_month FROM tegidege9284_staging.orders, if_common.dim_dates
     WHERE orders.order_date = @drived_dim_date
     GROUP BY MONTH(orders.order_date)
+    ORDER BY MONTH(orders.order_date) ASC 
 )
 SELECT *
 FROM destination

@@ -65,7 +65,6 @@ destination as (
     orders.order_date AS most_ordered_day, 
     @is_holiday AS is_public_holiday, 
     COUNT(DISTINCT reviews) AS tt_review_points,
-    COUNT(reviews) AS pct_one_star_review,
     round(100 * @one_star / @total_reviews) AS pct_one_star_review,
     round(100 * @two_star / @total_reviews) AS pct_two_star_review,
     round(100 * @three_star / @total_reviews) AS pct_three_star_review,
@@ -79,7 +78,7 @@ destination as (
     INNER JOIN tegidege9284_staging.orders on orders.product_id = dim_products.product_id
     INNER JOIN tegidege9284_staging.shipments_deliveries on shipments_deliveries.order_id = orders.order_id
     , if_common.dim_dates
-    HAVING MAX(reviews) AND MAX(SUM(quantity))
+    HAVING MAX(@total_reviews) AND MAX(SUM(quantity))
     GROUP BY reviews
 )
 SELECT *
