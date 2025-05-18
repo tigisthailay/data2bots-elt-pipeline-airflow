@@ -36,8 +36,7 @@ The project requires the following:
 ## Tools
 1. Docker
 2. Airflow
-3. redash
-4. postgres
+3. postgres
 
 ## Usage
 ### Docker-compose
