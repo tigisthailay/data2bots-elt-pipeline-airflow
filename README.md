@@ -37,6 +37,7 @@ The project requires the following:
 1. Docker
 2. Airflow
 3. postgres
+4. DBT
 
 ## Usage
 ### Docker-compose
