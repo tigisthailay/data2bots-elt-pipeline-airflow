@@ -1,19 +1,46 @@
 /* this query retrives all informations 
 from all tables of if_common database */
 
-with source as (
+with orders as (
     select *
-    from {{ source('d2b_accessment', 'tegidege9284_staging.orders','tegidege9284_staging.shipments_deliveries','tegidege9284_staging.reviews','if_common.dim_products','if_common.dim_customers','if_common.dim_dates', 'if_common.dim_addresses') }}
+    from {{ source('d2b_accessment', 'tegidege9284_staging.orders') }}
 ),
-destination as (
-    SELECT orders.order_id, orders.customer_id, orders.order_date, orders.product_id, orders.unit_price, orders.quantity, orders.amount,
-    shipments_deliveries.shipment_id, shipments_deliveries.order_id, shipments_deliveries.delivery_date, shipments_deliveries.shipment_date,
-    reviews.review, reviews.product_id, 
-    dim_product.product_id, _dim_product.product_category, dim_product.product_name,
-    dim_customers.customer_id, dim_customers.customer_name, dim_customers.postal_code,
-    dim_dates.calender_dt, dim_dates.year_num, dim_dates.month_of_the_year_num, dim_dates.day_of_the_month_num, dim_dates.day_of_the_week_num, dim_dates.working_day,
-    dim_addresses.postal_code, dim_addresses.region, dim_addresses.state, dim_addresses.address
-    from source
+shipments_deliveries as (
+    select *
+    from {{ source('d2b_accessment', 'tegidege9284_staging.shipments_deliveries') }}
+),
+reviews as (
+    select *
+    from {{ source('d2b_accessment', 'tegidege9284_staging.reviews') }}
+),
+dim_products as (
+    select *
+    from {{ source('if_common', 'dim_products') }}
+),
+dim_customers as (
+    select *
+    from {{ source('if_common', 'dim_customers') }}
+),
+dim_dates as (
+    select *
+    from {{ source('if_common', 'dim_dates') }}
+),
+dim_addresses as (
+    select *
+    from {{ source('if_common', 'dim_addresses') }}
 )
-SELECT *
-FROM destination
+select 
+    o.order_id, o.customer_id, o.order_date, o.product_id, o.unit_price, o.quantity, o.amount,
+    sd.shipment_id, sd.delivery_date, sd.shipment_date,
+    r.review,
+    dp.product_category, dp.product_name,
+    dc.customer_name, dc.postal_code as customer_postal_code,
+    dd.calender_dt, dd.year_num, dd.month_of_the_year_num, dd.day_of_the_month_num, dd.day_of_the_week_num, dd.working_day,
+    da.region, da.state, da.address
+from orders o
+left join shipments_deliveries sd on o.order_id = sd.order_id
+left join reviews r on o.product_id = r.product_id
+left join dim_products dp on o.product_id = dp.product_id
+left join dim_customers dc on o.customer_id = dc.customer_id
+left join dim_dates dd on o.order_date = dd.calender_dt
+left join dim_addresses da on dc.postal_code = da.postal_code
