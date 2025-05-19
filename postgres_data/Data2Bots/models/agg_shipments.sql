@@ -2,37 +2,40 @@
 Total number of late shipments
 */
 
-with source as (
-    select *
-    from {{ref('feature')}}
-),
-destination as (
-    SELECT COUNT(*) AS tt_late_shipments
-    FROM tegidege9284_staging.shipments_deliveries 
-    INNER JOIN tegidege9284_staging.orders
-    ON shipments_deliveries.order_id = orders.order_id
-    WHERE shipments_deliveries.shipment_date >= DATEADD(day, 6, orders.order_date)
-    AND shipments_deliveries.delivery_date = NULL
+with late_shipments as (
+    select 
+        f.shipment_id,
+        f.order_id,
+        f.shipment_date,
+        f.order_date,
+        f.delivery_date
+    from {{ ref('feature') }} f
+    where 
+        f.shipment_date >= DATEADD(day, 6, f.order_date) -- Late shipment condition
+        and f.delivery_date is null -- Undelivered shipments
 )
-SELECT *
-FROM destination
+select 
+    count(*) as total_late_shipments
+from late_shipments;
+
 
 /* 
 Total number of undelivered shipments
 */
-with source as (
-    select *
-    from {{ref('feature')}}
-),
-destination as (
-    SELECT COUNT(*) AS tt_undelivered_items
-    FROM tegidege9284_staging.shipments_deliveries 
-    INNER JOIN tegidege9284_staging.orders
-    ON shipments_deliveries.order_id = orders.order_id
-    WHERE shipments_deliveries.shipment_date = NULL
-    AND shipments_deliveries.delivery_date = NULL
-    AND CONVERT(DATE,GETDATE()) = DATEADD(day, 15, orders.order_date)
-    AND  = NULL
+
+with undelivered_shipments as (
+    select 
+        f.shipment_id,
+        f.order_id,
+        f.shipment_date,
+        f.delivery_date,
+        f.order_date
+    from {{ ref('feature') }} f
+    where 
+        f.shipment_date is null
+        and f.delivery_date is null
+        and current_date = f.order_date + interval '15' day
 )
-SELECT *
-FROM destination
+select 
+    count(*) as total_undelivered_shipments
+from undelivered_shipments;
