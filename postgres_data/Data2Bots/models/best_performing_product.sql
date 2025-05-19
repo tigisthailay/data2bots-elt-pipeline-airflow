@@ -1,85 +1,56 @@
-/* This transformation gives the best performing product*/
-
-/*
-Declar local variables
+/* 
+This transformation identifies the best performing product based on various metrics 
+such as reviews, shipment times, and holiday performance.
 */
-
-DECLARE @is_holiday bool, @late_shipment int, @tt_early_shipments int,
-@particular_late_shipment int, @particular_early_shipment int,
-@total_reviews int, @one_star int, @two_star int, @three_star int,
-@four_star int, @five_star int
-
-/*
-Set values to the variables.
-*/
-SET @is_holiday = (
-    if (dim_dates.day_of_the_week_num BETWEEN 1 and 5 AND dim_dates.working_day = 'false')
-    @is_holiday = 'True'
-    ELSE
-    @is_holiday = 'False'
-)
-
-SET @tt_late_shipment = (SELECT COUNT(*) AS tt_late_shipments
-    FROM tegidege9284_staging.shipments_deliveries 
-    INNER JOIN tegidege9284_staging.orders
-    ON shipments_deliveries.order_id = orders.order_id
-    WHERE shipments_deliveries.shipment_date >= DATEADD(day, 6, orders.order_date)
-    AND shipments_deliveries.delivery_date = 'NULL')
-
-SET @particular_late_shipment = (SELECT COUNT(order.product_id) AS particular_late_shipments
-    FROM tegidege9284_staging.orders 
-    INNER JOIN tegidege9284_staging.shipments_deliveries
-    ON shipments_deliveries.order_id = orders.order_id
-    WHERE shipments_deliveries.shipment_date >= DATEADD(day, 6, orders.order_date)
-    AND shipments_deliveries.delivery_date = 'NULL')
-
-SET @tt_early_shipments = (SELECT COUNT(*) AS tt_early_shipments
-    FROM tegidege9284_staging.shipments_deliveries 
-    INNER JOIN tegidege9284_staging.orders
-    ON shipments_deliveries.order_id = orders.order_id
-    WHERE shipments_deliveries.shipment_date < DATEADD(day, 6, orders.order_date)
-    AND shipments_deliveries.delivery_date != 'NULL')
-
-SET @particular_early_shipment = (SELECT COUNT(product_id) AS particular_early_shipment_early_shipments
-    FROM tegidege9284_staging.orders 
-    INNER JOIN tegidege9284_staging.shipments_deliveries
-    ON shipments_deliveries.order_id = orders.order_id
-    WHERE shipments_deliveries.shipment_date < DATEADD(day, 6, orders.order_date)
-    AND shipments_deliveries.delivery_date != 'NULL')
-
-SET @total_reviews = (SELECT count(*) over() FROM tegidege9284_staging.reviews)
-SET @one_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 1)
-SET @two_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 2)
-SET @three_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 3)
-SET @four_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 4)
-SET @five_star = (SELECT COUNT(reviews) FROM tegidege9284_staging.reviews WHERE reviews = 5)
-
-/* Start transformation*/
 
 with source as (
     select *
-    from {{ref('feature')}}
+    from {{ ref('feature') }}
 ),
-destination as (
-    SELECT dim_products.product_name, 
-    orders.order_date AS most_ordered_day, 
-    @is_holiday AS is_public_holiday, 
-    COUNT(DISTINCT reviews) AS tt_review_points,
-    round(100 * @one_star / @total_reviews) AS pct_one_star_review,
-    round(100 * @two_star / @total_reviews) AS pct_two_star_review,
-    round(100 * @three_star / @total_reviews) AS pct_three_star_review,
-    round(100 * @four_star / @total_reviews) AS pct_four_star_review,
-    round(100 * @five_star / @total_reviews) AS pct_five_star_review,
-    round(100 * @particular_early_shipment / @tt_early_shipment) AS pct_early_shipments,
-    round(100 * @particular_late_shipment / @tt_late_shipments)  AS pct_late_shipments
-
-    FROM if_common.dim_products
-    INNER JOIN tegidege9284_staging.reviews ON dim_products.product_id = reviews.product_id 
-    INNER JOIN tegidege9284_staging.orders on orders.product_id = dim_products.product_id
-    INNER JOIN tegidege9284_staging.shipments_deliveries on shipments_deliveries.order_id = orders.order_id
-    , if_common.dim_dates
-    HAVING MAX(@total_reviews) AND MAX(SUM(quantity))
-    GROUP BY reviews
+aggregated_metrics as (
+    SELECT
+        dim_products.product_name,
+        COUNT(CASE WHEN reviews.review = 1 THEN 1 END) AS one_star_reviews,
+        COUNT(CASE WHEN reviews.review = 2 THEN 1 END) AS two_star_reviews,
+        COUNT(CASE WHEN reviews.review = 3 THEN 1 END) AS three_star_reviews,
+        COUNT(CASE WHEN reviews.review = 4 THEN 1 END) AS four_star_reviews,
+        COUNT(CASE WHEN reviews.review = 5 THEN 1 END) AS five_star_reviews,
+        COUNT(reviews.review) AS total_reviews,
+        COUNT(CASE 
+            WHEN shipments_deliveries.shipment_date < orders.order_date + interval '6' day 
+                 AND shipments_deliveries.delivery_date IS NOT NULL 
+            THEN 1 END) AS early_shipments,
+        COUNT(CASE 
+            WHEN shipments_deliveries.shipment_date >= orders.order_date + interval '6' day 
+                 AND shipments_deliveries.delivery_date IS NULL 
+            THEN 1 END) AS late_shipments
+    FROM 
+        dim_products
+    LEFT JOIN tegidege9284_staging.reviews 
+        ON dim_products.product_id = reviews.product_id
+    LEFT JOIN tegidege9284_staging.orders 
+        ON dim_products.product_id = orders.product_id
+    LEFT JOIN tegidege9284_staging.shipments_deliveries 
+        ON orders.order_id = shipments_deliveries.order_id
+    LEFT JOIN if_common.dim_dates 
+        ON orders.order_date = dim_dates.calender_dt
+    GROUP BY dim_products.product_name
+),
+calculated_metrics as (
+    SELECT
+        product_name,
+        total_reviews,
+        ROUND(100.0 * one_star_reviews / NULLIF(total_reviews, 0), 2) AS pct_one_star_reviews,
+        ROUND(100.0 * two_star_reviews / NULLIF(total_reviews, 0), 2) AS pct_two_star_reviews,
+        ROUND(100.0 * three_star_reviews / NULLIF(total_reviews, 0), 2) AS pct_three_star_reviews,
+        ROUND(100.0 * four_star_reviews / NULLIF(total_reviews, 0), 2) AS pct_four_star_reviews,
+        ROUND(100.0 * five_star_reviews / NULLIF(total_reviews, 0), 2) AS pct_five_star_reviews,
+        early_shipments,
+        late_shipments,
+        ROUND(100.0 * early_shipments / NULLIF((early_shipments + late_shipments), 0), 2) AS pct_early_shipments,
+        ROUND(100.0 * late_shipments / NULLIF((early_shipments + late_shipments), 0), 2) AS pct_late_shipments
+    FROM aggregated_metrics
 )
 SELECT *
-FROM destination
+FROM calculated_metrics
+ORDER BY total_reviews DESC, pct_five_star_reviews DESC;
